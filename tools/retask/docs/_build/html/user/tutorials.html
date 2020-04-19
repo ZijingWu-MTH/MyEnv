@@ -1,0 +1,193 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Tutorials &mdash; retask 0.4 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/flasky.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.4',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="retask 0.4 documentation" href="../index.html" />
+    <link rel="next" title="API" href="../api.html" />
+    <link rel="prev" title="Quickstart" href="quickstart.html" />
+   
+  
+  <link media="only screen and (max-device-width: 480px)" href="../_static/small_flask.css" type= "text/css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="../api.html" title="API"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="quickstart.html" title="Quickstart"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">retask 0.4 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="tutorials">
+<span id="id1"></span><h1>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h1>
+<p>This section of the document we have in depth examples of various use cases.</p>
+<div class="section" id="async-data-transfer-between-producer-and-worker">
+<h2>Async data transfer between producer and worker<a class="headerlink" href="#async-data-transfer-between-producer-and-worker" title="Permalink to this headline">¶</a></h2>
+<p>In many real life scenarios we need to send the result back from the worker instances
+to the producer. The following code examples shows how to achieve that.</p>
+<div class="section" id="async-producer-py">
+<h3>async_producer.py<a class="headerlink" href="#async-producer-py" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">retask</span> <span class="kn">import</span> <span class="n">Task</span>
+<span class="kn">from</span> <span class="nn">retask</span> <span class="kn">import</span> <span class="n">Queue</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="n">queue</span> <span class="o">=</span> <span class="n">Queue</span><span class="p">(</span><span class="s">&#39;example&#39;</span><span class="p">)</span>
+<span class="n">info1</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;user&#39;</span><span class="p">:</span> <span class="s">&#39;Fedora planet&#39;</span><span class="p">,</span> <span class="s">&#39;url&#39;</span><span class="p">:</span> <span class="s">&#39;http://planet.fedoraproject.org&#39;</span><span class="p">}</span>
+<span class="n">task1</span> <span class="o">=</span> <span class="n">Task</span><span class="p">(</span><span class="n">info1</span><span class="p">)</span>
+<span class="n">queue</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+<span class="n">job</span> <span class="o">=</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="n">task1</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">job</span><span class="o">.</span><span class="n">result</span>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">job</span><span class="o">.</span><span class="n">result</span>
+</pre></div>
+</div>
+<p>Here queue.enqueue method returns a <a class="reference internal" href="../retask.queue.html#retask.queue.Job" title="retask.queue.Job"><tt class="xref py py-class docutils literal"><span class="pre">Job</span></tt></a> object. We can access job.result
+to see returned result from a worker. If there is no result yet came back from the worker, it will
+print <cite>None</cite>. If you don&#8217;t need any returned data from the worker you can safely ignore the job object.</p>
+</div>
+<div class="section" id="async-consumer-py">
+<h3>async_consumer.py<a class="headerlink" href="#async-consumer-py" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">retask</span> <span class="kn">import</span> <span class="n">Task</span>
+<span class="kn">from</span> <span class="nn">retask</span> <span class="kn">import</span> <span class="n">Queue</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="n">queue</span> <span class="o">=</span> <span class="n">Queue</span><span class="p">(</span><span class="s">&#39;example&#39;</span><span class="p">)</span>
+<span class="n">queue</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+<span class="n">task</span> <span class="o">=</span> <span class="n">queue</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+<span class="k">print</span> <span class="n">task</span><span class="o">.</span><span class="n">data</span>
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">queue</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">task</span><span class="p">,</span> <span class="s">&quot;We received your information dear </span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">task</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="s">&#39;user&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>In the above example we see two newly introduced methods <a class="reference internal" href="../retask.queue.html#retask.queue.Queue" title="retask.queue.Queue"><tt class="xref py py-class docutils literal"><span class="pre">Queue</span></tt></a>.
+<a class="reference internal" href="../retask.queue.html#retask.queue.Queue.wait" title="retask.queue.Queue.wait"><tt class="xref py py-func docutils literal"><span class="pre">wait()</span></tt></a> is a blocking call to wait for a new task in the queue. This is
+the preferred method over polling using <a class="reference internal" href="../retask.queue.html#retask.queue.Queue.dequeue" title="retask.queue.Queue.dequeue"><tt class="xref py py-func docutils literal"><span class="pre">dequeue()</span></tt></a>.
+To send the result back workers will use <a class="reference internal" href="../retask.queue.html#retask.queue.Queue.send" title="retask.queue.Queue.send"><tt class="xref py py-func docutils literal"><span class="pre">send()</span></tt></a> method, which takes an optional argument
+<cite>wait_time</cite> to specify timeout value in seconds.</p>
+</div>
+</div>
+<div class="section" id="synchronous-blocking-wait-for-the-result">
+<h2>Synchronous / blocking wait for the result<a class="headerlink" href="#synchronous-blocking-wait-for-the-result" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">retask</span> <span class="kn">import</span> <span class="n">Task</span>
+<span class="kn">from</span> <span class="nn">retask</span> <span class="kn">import</span> <span class="n">Queue</span>
+<span class="n">queue</span> <span class="o">=</span> <span class="n">Queue</span><span class="p">(</span><span class="s">&#39;example&#39;</span><span class="p">)</span>
+<span class="n">info1</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;user&#39;</span><span class="p">:</span> <span class="s">&#39;Fedora planet&#39;</span><span class="p">,</span> <span class="s">&#39;url&#39;</span><span class="p">:</span> <span class="s">&#39;http://planet.fedoraproject.org&#39;</span><span class="p">}</span>
+<span class="n">task1</span> <span class="o">=</span> <span class="n">Task</span><span class="p">(</span><span class="n">info1</span><span class="p">)</span>
+<span class="n">queue</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+<span class="n">job</span> <span class="o">=</span> <span class="n">queue</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="n">task1</span><span class="p">)</span>
+<span class="n">job</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+<span class="k">print</span> <span class="n">job</span><span class="o">.</span><span class="n">result</span>
+</pre></div>
+</div>
+<p>In this example we are using <a class="reference internal" href="../retask.queue.html#retask.queue.Job.wait" title="retask.queue.Job.wait"><tt class="xref py py-func docutils literal"><span class="pre">wait()</span></tt></a> function to do a blocking
+synchronous call to the worker.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper"><p class="logo">
+  <a href="../index.html">
+    <img class="logo" src="../_static/retask-sidebar.png" alt="Logo"/>
+  </a>
+</p>
+<p>
+<iframe src="http://ghbtns.com/github-btn.html?user=kushaldas&repo=retask&type=watch&count=true&size=large"
+    allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+<p>
+  Retask is a simple task queue implementation
+  written for human beings. It provides generic
+  solution to create and manage task queues.
+</p>
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Tutorials</a><ul>
+<li><a class="reference internal" href="#async-data-transfer-between-producer-and-worker">Async data transfer between producer and worker</a><ul>
+<li><a class="reference internal" href="#async-producer-py">async_producer.py</a></li>
+<li><a class="reference internal" href="#async-consumer-py">async_consumer.py</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#synchronous-blocking-wait-for-the-result">Synchronous / blocking wait for the result</a></li>
+</ul>
+</li>
+</ul>
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="quickstart.html" title="previous chapter">Quickstart</a></li>
+      <li>Next: <a href="../api.html" title="next chapter">API</a></li>
+  </ul></li>
+</ul>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/user/tutorials.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2012, Kushal Das.
+    </div>
+    <a href="https://github.com/kushaldas/retask" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+  </body>
+</html>

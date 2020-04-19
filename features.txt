@@ -1,0 +1,2 @@
+1. Partial check-in.[Done]
+[2. Gothough type def types when you press Ctrl-]

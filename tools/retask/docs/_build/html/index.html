@@ -1,0 +1,195 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Retask: simple Task Queue &mdash; retask 0.4 documentation</title>
+    
+    <link rel="stylesheet" href="_static/flasky.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.4',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="retask 0.4 documentation" href="#" />
+    <link rel="next" title="Introduction" href="user/intro.html" />
+   
+  
+  <link media="only screen and (max-device-width: 480px)" href="_static/small_flask.css" type= "text/css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="user/intro.html" title="Introduction"
+             accesskey="N">next</a> |</li>
+        <li><a href="#">retask 0.4 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="retask-simple-task-queue">
+<h1>Retask: simple Task Queue<a class="headerlink" href="#retask-simple-task-queue" title="Permalink to this headline">¶</a></h1>
+<p>retask is a python module to create and manage distributed task queue/job queue.</p>
+<p>It uses <a class="reference external" href="http://redis.io">Redis</a> to create task queues. User can enqueue
+and dequeue tasks in the queues they manage. Each task can contain any JSON
+serializable python objects. We use <cite>JSON</cite> internally to store the tasks
+in the queues.</p>
+<p>Workers can execute tasks and return the result asynchronously and if required
+synchronously (wait until worker returns the result to the job).</p>
+<div class="section" id="dependencies">
+<h2>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>python-redis</li>
+<li>mock (for tests)</li>
+<li>A running Redis server</li>
+</ul>
+</div>
+<div class="section" id="testimonial-s">
+<h2>Testimonial(s)<a class="headerlink" href="#testimonial-s" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><strong>Ralph Bean</strong></dt>
+<dd>python-retask made job distribution easy at a time when I didn&#8217;t want to have
+to think about job distribution.  Life saver.</dd>
+</dl>
+</div>
+<div class="section" id="user-guide">
+<h2>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user/intro.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user/intro.html#first-requirement">First requirement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user/intro.html#why-redis">Why Redis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user/intro.html#retask-license">Retask License</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="user/redis.html">Setting up the Redis Server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user/install.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user/install.html#distribute-pip">Distribute &amp; Pip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user/install.html#get-the-code">Get the Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user/install.html#installing-redis-py">Installing redis-py</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="user/quickstart.html">Quickstart</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user/quickstart.html#producer-py">producer.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user/quickstart.html#consumer-py">consumer.py</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="user/tutorials.html">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user/tutorials.html#async-data-transfer-between-producer-and-worker">Async data transfer between producer and worker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user/tutorials.html#synchronous-blocking-wait-for-the-result">Synchronous / blocking wait for the result</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="api-documentation">
+<h2>API Documentation<a class="headerlink" href="#api-documentation" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#exceptions">Exceptions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><em>Index</em></a></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper"><p class="logo">
+  <a href="#">
+    <img class="logo" src="_static/retask-sidebar.png" alt="Logo"/>
+  </a>
+</p>
+
+<p>
+  <iframe src="http://ghbtns.com/github-btn.html?user=kushaldas&repo=retask&type=watch&count=true&size=large"
+    allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+<p>
+  Retask is a simple task queue implementation
+  written for human beings. It provides generic
+  solution to create and manage task queues.
+</p>
+
+<p>
+  Feedback is greatly appreciated. If you have any questions, comments,
+  random praise, or anonymous threats, <a href="mailto:kushaldas@gmail.com">
+  shoot me an email</a>.
+</p>
+
+
+<h3>Useful Links</h3>
+<ul>
+  <li><a href="http://github.com/kushaldas/retask">Retask @ GitHub</a></li>
+  <li><a href="http://github.com/kushaldas/retask/issues">Issue Tracker</a></li>
+</ul>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/index.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2012, Kushal Das.
+    </div>
+    <a href="https://github.com/kushaldas/retask" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+  </body>
+</html>

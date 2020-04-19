@@ -1,0 +1,26 @@
+Change log
+==========
+
+1.1 2011-11-14 Eric V. Smith
+----------------------------
+* No API or code changes.
+* Fixed project URL in setup.py.
+* Fixed license description in setup.py.
+
+1.0 2011-10-23 Eric V. Smith
+----------------------------
+* Stabilize API, move to version 1.0.
+* Added "python setup.py test" support to run unittests.
+* Improve documentation examples.
+* Renamed "default_default" to just "default".
+* Expose "NO_DEFAULT".
+* Support mapping objects in addition to strings and lists for field_names.
+* Add tests for iterables, not just lists, for field_names.
+
+0.2 2011-10-13 Eric V. Smith
+----------------------------
+* Fix a typo in the documentation, no code changes.
+
+0.1 2011-10-12 Eric V. Smith
+----------------------------
+* Initial release.

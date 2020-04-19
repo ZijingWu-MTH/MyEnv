@@ -1,0 +1,49 @@
+\begin{theindex}
+\def\bigletter#1{{\Large\sffamily#1}\nopagebreak\vspace{1mm}}
+
+  \bigletter C
+  \item connect() (retask.queue.Queue method), \hyperpage{9}
+  \item ConnectionError, \hyperpage{11}
+
+  \indexspace
+  \bigletter D
+  \item data (retask.Task attribute), \hyperpage{11}
+  \item dequeue() (retask.queue.Queue method), \hyperpage{9}
+
+  \indexspace
+  \bigletter E
+  \item enqueue() (retask.queue.Queue method), \hyperpage{9}
+
+  \indexspace
+  \bigletter F
+  \item find() (retask.queue.Queue method), \hyperpage{10}
+
+  \indexspace
+  \bigletter J
+  \item Job (class in retask.queue), \hyperpage{10}
+
+  \indexspace
+  \bigletter L
+  \item length (retask.queue.Queue attribute), \hyperpage{10}
+
+  \indexspace
+  \bigletter Q
+  \item Queue (class in retask.queue), \hyperpage{9}
+
+  \indexspace
+  \bigletter R
+  \item result (retask.queue.Job attribute), \hyperpage{10}
+  \item retask (module), \hyperpage{9}
+  \item retask.Task (built-in class), \hyperpage{11}
+  \item RetaskException, \hyperpage{11}
+
+  \indexspace
+  \bigletter S
+  \item send() (retask.queue.Queue method), \hyperpage{10}
+
+  \indexspace
+  \bigletter W
+  \item wait() (retask.queue.Job method), \hyperpage{11}
+  \item wait() (retask.queue.Queue method), \hyperpage{10}
+
+\end{theindex}

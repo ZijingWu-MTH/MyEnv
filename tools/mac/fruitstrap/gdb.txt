@@ -1,0 +1,1275 @@
+File '41288' does not exist or is not a regular file.
+
+The program is not being run.
+File 'program' does not exist or is not a regular file.
+
+/Users/ZijingWu/myEnv/tools/mac/fruitstrap/41288: No such file or directory
+Attaching to process 41288.
+Reading symbols for shared libraries . done
+Reading symbols for shared libraries .......................................................................... done
+Reading symbols for shared libraries + done
+0x00007fff8fa806ae in wait4 ()
+Quit
+The program is running.  Quit anyway (and detach it)? (y or n) Detaching from process 41288.
+File 'program' does not exist or is not a regular file.
+
+/Users/ZijingWu/myEnv/tools/mac/fruitstrap/64507: No such file or directory
+Attaching to process 64507.
+Reading symbols for shared libraries . done
+Reading symbols for shared libraries ......................................................................................................................................................................................................
+warning: .o file "/Users/ZijingWu/code/cmad2/source/ui/web_plugin/projects/webplugin/../../../../mp/dist/swep/libMediaProcessor.a(data.o)" more recent than executable timestamp in "/Users/ZijingWu/code/cmad2/source/ui/web_plugin/build/projects/webplugin/Debug/webplugin.plugin/Contents/MacOS/webplugin"
+
+warning: Could not open OSO file /Users/ZijingWu/code/cmad2/source/ui/web_plugin/projects/webplugin/../../../../mp/dist/swep/libMediaProcessor.a(data.o) to scan for pubtypes for objfile /Users/ZijingWu/code/cmad2/source/ui/web_plugin/build/projects/webplugin/Debug/webplugin.plugin/Contents/MacOS/webplugin
+
+warning: .o file "/Users/ZijingWu/code/cmad2/source/ui/web_plugin/projects/webplugin/../../../../mp/dist/swep/libMediaProcessor.a(logger.o)" more recent than executable timestamp in "/Users/ZijingWu/code/cmad2/source/ui/web_plugin/build/projects/webplugin/Debug/webplugin.plugin/Contents/MacOS/webplugin"
+
+warning: Could not open OSO file /Users/ZijingWu/code/cmad2/source/ui/web_plugin/projects/webplugin/../../../../mp/dist/swep/libMediaProcessor.a(logger.o) to scan for pubtypes for objfile /Users/ZijingWu/code/cmad2/source/ui/web_plugin/build/projects/webplugin/Debug/webplugin.plugin/Contents/MacOS/webplugin
+
+warning: .o file "/Users/ZijingWu/code/cmad2/source/ui/web_plugin/projects/webplugin/../../../../mp/dist/swep/libMediaProcessor.a(util.o)" more recent than executable timestamp in "/Users/ZijingWu/code/cmad2/source/ui/web_plugin/build/projects/webplugin/Debug/webplugin.plugin/Contents/MacOS/webplugin"
+
+warning: Could not open OSO file /Users/ZijingWu/code/cmad2/source/ui/web_plugin/projects/webplugin/../../../../mp/dist/swep/libMediaProcessor.a(util.o) to scan for pubtypes for objfile /Users/ZijingWu/code/cmad2/source/ui/web_plugin/build/projects/webplugin/Debug/webplugin.plugin/Contents/MacOS/webplugin
+.
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin9/4.0.1//libgcc_static.a(_moddi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5490~1/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin9/4.0.1//libgcc_static.a(_udivdi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5490~1/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin9/4.0.1//libgcc_static.a(_divdi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5490~1/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin9/4.0.1//libgcc_static.a(_umoddi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5490~1/src/gcc/libgcc2.c".
+
+..
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_muldi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_negdi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_lshrdi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_ashldi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_ashrdi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_cmpdi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_ucmpdi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_clear_cache.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_enable_execute_stack.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(__main.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_absvsi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_absvdi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_addvsi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_addvdi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_subvsi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_subvdi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_mulvsi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_mulvdi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_negvsi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_negvdi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_ffssi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_ffsdi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_clz.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_clzsi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_clzdi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_ctzsi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_ctzdi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_popcount_tab.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_popcountsi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_popcountdi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_paritysi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_paritydi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_powisf2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_powidf2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_powixf2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_mulsc3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_muldc3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_mulxc3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_divsc3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_divdc3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_divxc3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_bswapsi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_bswapdi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_fixunssfsi.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_fixunsdfsi.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_fixunsxfsi.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_fixsfdi.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_fixunssfdi.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_floatdisf.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_floatundisf.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_fixdfdi.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_fixunsdfdi.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_floatdidf.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_floatundidf.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_fixxfdi.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_fixunsxfdi.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_floatdixf.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_floatundixf.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_eprintf.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(__gcc_bcmp.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_divdi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_moddi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_udivdi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_umoddi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_udiv_w_sdiv.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_udivmoddi4.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+.
+warning: Could not find object file "/Users/cmad/work/test_jintao/src/trunk/callcontrol/thirdparty/openldap-2.3.28/libraries/liblber/.libs/decode.o" - no debug information available for "decode.c".
+
+
+warning: Could not find object file "/Users/cmad/work/test_jintao/src/trunk/callcontrol/thirdparty/openldap-2.3.28/libraries/liblber/.libs/encode.o" - no debug information available for "encode.c".
+
+
+warning: Could not find object file "/Users/cmad/work/test_jintao/src/trunk/callcontrol/thirdparty/openldap-2.3.28/libraries/liblber/.libs/io.o" - no debug information available for "io.c".
+
+
+warning: Could not find object file "/Users/cmad/work/test_jintao/src/trunk/callcontrol/thirdparty/openldap-2.3.28/libraries/liblber/.libs/bprint.o" - no debug information available for "bprint.c".
+
+
+warning: Could not find object file "/Users/cmad/work/test_jintao/src/trunk/callcontrol/thirdparty/openldap-2.3.28/libraries/liblber/.libs/debug.o" - no debug information available for "debug.c".
+
+
+warning: Could not find object file "/Users/cmad/work/test_jintao/src/trunk/callcontrol/thirdparty/openldap-2.3.28/libraries/liblber/.libs/memory.o" - no debug information available for "memory.c".
+
+
+warning: Could not find object file "/Users/cmad/work/test_jintao/src/trunk/callcontrol/thirdparty/openldap-2.3.28/libraries/liblber/.libs/options.o" - no debug information available for "options.c".
+
+
+warning: Could not find object file "/Users/cmad/work/test_jintao/src/trunk/callcontrol/thirdparty/openldap-2.3.28/libraries/liblber/.libs/sockbuf.o" - no debug information available for "sockbuf.c".
+
+
+warning: Could not find object file "/Users/cmad/work/test_jintao/src/trunk/callcontrol/thirdparty/openldap-2.3.28/libraries/liblber/.libs/version.o" - no debug information available for "version.c".
+
+.
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/bind.o" - no debug information available for "bind.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/open.o" - no debug information available for "open.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/result.o" - no debug information available for "result.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/error.o" - no debug information available for "error.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/compare.o" - no debug information available for "compare.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/search.o" - no debug information available for "search.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/controls.o" - no debug information available for "controls.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/messages.o" - no debug information available for "messages.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/references.o" - no debug information available for "references.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/extended.o" - no debug information available for "extended.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/cyrus.o" - no debug information available for "cyrus.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/modify.o" - no debug information available for "modify.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/add.o" - no debug information available for "add.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/modrdn.o" - no debug information available for "modrdn.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/delete.o" - no debug information available for "delete.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/abandon.o" - no debug information available for "abandon.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/sasl.o" - no debug information available for "sasl.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/sbind.o" - no debug information available for "sbind.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/unbind.o" - no debug information available for "unbind.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/cancel.o" - no debug information available for "cancel.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/filter.o" - no debug information available for "filter.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/free.o" - no debug information available for "free.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/sort.o" - no debug information available for "sort.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/passwd.o" - no debug information available for "passwd.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/whoami.o" - no debug information available for "whoami.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/getdn.o" - no debug information available for "getdn.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/getentry.o" - no debug information available for "getentry.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/getattr.o" - no debug information available for "getattr.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/getvalues.o" - no debug information available for "getvalues.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/addentry.o" - no debug information available for "addentry.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/request.o" - no debug information available for "request.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/os-ip.o" - no debug information available for "os-ip.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/url.o" - no debug information available for "url.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/sortctrl.o" - no debug information available for "sortctrl.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/vlvctrl.o" - no debug information available for "vlvctrl.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/init.o" - no debug information available for "init.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/options.o" - no debug information available for "options.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/print.o" - no debug information available for "print.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/string.o" - no debug information available for "string.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/util-int.o" - no debug information available for "util-int.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/schema.o" - no debug information available for "schema.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/charray.o" - no debug information available for "charray.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/tls.o" - no debug information available for "tls.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/os-local.o" - no debug information available for "os-local.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/dnssrv.o" - no debug information available for "dnssrv.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/utf-8.o" - no debug information available for "utf-8.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/utf-8-conv.o" - no debug information available for "utf-8-conv.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/turn.o" - no debug information available for "turn.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/ppolicy.o" - no debug information available for "ppolicy.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/callcontrol/thirdparty/openldap-2.3.28/libraries/libldap/.libs/version.o" - no debug information available for "version.c".
+
+.
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/coder/coder.o" - no debug information available for "coder.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/coder/coderbitbuffer.o" - no debug information available for "coderbitbuffer.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/coder/emanag.o" - no debug information available for "emanag.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/coder/hfantas.o" - no debug information available for "hfantas.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/coder/hma.o" - no debug information available for "hma.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/coder/per.o" - no debug information available for "per.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/coder/perBitString.o" - no debug information available for "perBitString.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/coder/perchoic.o" - no debug information available for "perchoic.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/coder/perchrst.o" - no debug information available for "perchrst.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/coder/peroctst.o" - no debug information available for "peroctst.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/coder/peroid.o" - no debug information available for "peroid.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/coder/perseq.o" - no debug information available for "perseq.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/coder/perseqof.o" - no debug information available for "perseqof.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/coder/persimpl.o" - no debug information available for "persimpl.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/coder/q931.o" - no debug information available for "q931.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/config/ci.o" - no debug information available for "ci.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/config/cibuf.o" - no debug information available for "cibuf.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/config/cifile.o" - no debug information available for "cifile.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/config/cisupp.o" - no debug information available for "cisupp.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/config/civirtfile.o" - no debug information available for "civirtfile.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/pvt_pst/psyntree.o" - no debug information available for "psyntree.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/pvt_pst/psyntreeDb.o" - no debug information available for "psyntreeDb.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/pvt_pst/psyntreeStackApi.o" - no debug information available for "psyntreeStackApi.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/pvt_pst/pvaltree.o" - no debug information available for "pvaltree.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/pvt_pst/pvaltreeStackApi.o" - no debug information available for "pvaltreeStackApi.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/utils/copybits.o" - no debug information available for "copybits.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/utils/ema.o" - no debug information available for "ema.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/utils/h32xLog.o" - no debug information available for "h32xLog.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/utils/hash.o" - no debug information available for "hash.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/utils/intutils.o" - no debug information available for "intutils.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/utils/mlist.o" - no debug information available for "mlist.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/utils/msg.o" - no debug information available for "msg.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/utils/oidutils.o" - no debug information available for "oidutils.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/utils/prnutils.o" - no debug information available for "prnutils.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/utils/ra.o" - no debug information available for "ra.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/utils/rpool.o" - no debug information available for "rpool.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/utils/rtree.o" - no debug information available for "rtree.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/utils/rvwatchdog.o" - no debug information available for "rvwatchdog.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/asn1/utils/strutils.o" - no debug information available for "strutils.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/adapters/pclock/rvadclock.o" - no debug information available for "rvadclock.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/adapters/pmutex/rvadmutex.o" - no debug information available for "rvadmutex.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/adapters/posix/rvadsema4.o" - no debug information available for "rvadsema4.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/adapters/posix/rvadthread.o" - no debug information available for "rvadthread.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/adapters/ptstamp/rvadtstamp.o" - no debug information available for "rvadtstamp.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ares/ares__read_line.o" - no debug information available for "ares__read_line.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ares/ares_expand_name.o" - no debug information available for "ares_expand_name.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ares/ares_init.o" - no debug information available for "ares_init.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ares/ares_process.o" - no debug information available for "ares_process.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ares/ares_query.o" - no debug information available for "ares_query.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ares/rvares.o" - no debug information available for "rvares.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ares/rvarescache.o" - no debug information available for "rvarescache.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ares/rvarescachep.o" - no debug information available for "rvarescachep.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ares/rvehd.o" - no debug information available for "rvehd.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ares/rvoscomp.o" - no debug information available for "rvoscomp.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cbase/rvcbase.o" - no debug information available for "rvcbase.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cbase/rvevent.o" - no debug information available for "rvevent.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cbase/rvglobals.o" - no debug information available for "rvglobals.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cbase/rvqueue.o" - no debug information available for "rvqueue.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cbase/rvsmq.o" - no debug information available for "rvsmq.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cbase/rvtimer.o" - no debug information available for "rvtimer.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cbase/rvtimerengine.o" - no debug information available for "rvtimerengine.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/memdrivers/rvosmem.o" - no debug information available for "rvosmem.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/memdrivers/rvpoolmem.o" - no debug information available for "rvpoolmem.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/netdrivers/rvhost.o" - no debug information available for "rvhost.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/netdrivers/rvportrange.o" - no debug information available for "rvportrange.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/netdrivers/rvselect.o" - no debug information available for "rvselect.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/netdrivers/rvsocket.o" - no debug information available for "rvsocket.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/netdrivers/rvtls.o" - no debug information available for "rvtls.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/rv64ascii.o" - no debug information available for "rv64ascii.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/rvccore.o" - no debug information available for "rvccore.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/rvccoreglobals.o" - no debug information available for "rvccoreglobals.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/rvclock.o" - no debug information available for "rvclock.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/rvcondvar.o" - no debug information available for "rvcondvar.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/rvlock.o" - no debug information available for "rvlock.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/rvlog.o" - no debug information available for "rvlog.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/rvloglistener.o" - no debug information available for "rvloglistener.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/rvmemory.o" - no debug information available for "rvmemory.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/rvmutex.o" - no debug information available for "rvmutex.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/rvsemaphore.o" - no debug information available for "rvsemaphore.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/rvstdio.o" - no debug information available for "rvstdio.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/rvthread.o" - no debug information available for "rvthread.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/rvthreadtls.o" - no debug information available for "rvthreadtls.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/rvtimestamp.o" - no debug information available for "rvtimestamp.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ccore/rvtm.o" - no debug information available for "rvtm.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ceutils/rvalloc.o" - no debug information available for "rvalloc.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ceutils/rvptrvector.o" - no debug information available for "rvptrvector.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cutils/rv64bits.o" - no debug information available for "rv64bits.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cutils/rvaddress.o" - no debug information available for "rvaddress.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cutils/rvansi.o" - no debug information available for "rvansi.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cutils/rvbase64.o" - no debug information available for "rvbase64.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cutils/rvema.o" - no debug information available for "rvema.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cutils/rvhashu.o" - no debug information available for "rvhashu.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cutils/rvnet2host.o" - no debug information available for "rvnet2host.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cutils/rvntptime.o" - no debug information available for "rvntptime.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cutils/rvobjlist.o" - no debug information available for "rvobjlist.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cutils/rvobjpool.o" - no debug information available for "rvobjpool.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cutils/rvpqueue.o" - no debug information available for "rvpqueue.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cutils/rvra.o" - no debug information available for "rvra.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cutils/rvrandomgenerator.o" - no debug information available for "rvrandomgenerator.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cutils/rvresource.o" - no debug information available for "rvresource.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cutils/rvsqrt.o" - no debug information available for "rvsqrt.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cutils/rvstrutils.o" - no debug information available for "rvstrutils.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/cutils/rvtime.o" - no debug information available for "rvtime.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ipsec/rvimsipsec.o" - no debug information available for "rvimsipsec.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ipsec/rvslinuxipsec.o" - no debug information available for "rvslinuxipsec.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ipsec/rvsolarisipsec.o" - no debug information available for "rvsolarisipsec.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ipsec/rvvxworksipsec.o" - no debug information available for "rvvxworksipsec.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ipsec/rvwinceipsec.o" - no debug information available for "rvwinceipsec.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ipsec/rvwindowsipsec.o" - no debug information available for "rvwindowsipsec.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ldap/rvldap.o" - no debug information available for "rvldap.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/common/ldap/rvopenldap.o" - no debug information available for "rvopenldap.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h245/caputils.o" - no debug information available for "caputils.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h245/cmchan.o" - no debug information available for "cmchan.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h245/cmChanGet.o" - no debug information available for "cmChanGet.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h245/cmChanOperations.o" - no debug information available for "cmChanOperations.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h245/cmConf.o" - no debug information available for "cmConf.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h245/cmctrl.o" - no debug information available for "cmctrl.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h245/cmCtrlCap.o" - no debug information available for "cmCtrlCap.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h245/cmCtrlMMode.o" - no debug information available for "cmCtrlMMode.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h245/cmCtrlMpoint.o" - no debug information available for "cmCtrlMpoint.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h245/cmCtrlMSD.o" - no debug information available for "cmCtrlMSD.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h245/cmCtrlRMode.o" - no debug information available for "cmCtrlRMode.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h245/cmCtrlRTD.o" - no debug information available for "cmCtrlRTD.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h245/cmH223Params.o" - no debug information available for "cmH223Params.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h245/cmH225Params.o" - no debug information available for "cmH225Params.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h245/cmH245.o" - no debug information available for "cmH245.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h245/faststart.o" - no debug information available for "faststart.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h245/h245_full.o" - no debug information available for "h245_full.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h245/redencod.o" - no debug information available for "redencod.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h245/transpcap.o" - no debug information available for "transpcap.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h245/userinput.o" - no debug information available for "userinput.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/asn_objects/commonasn.o" - no debug information available for "commonasn.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/asn_objects/q931asn1.o" - no debug information available for "q931asn1.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cat/cat.o" - no debug information available for "cat.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmaltep.o" - no debug information available for "cmaltep.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmAutoRas.o" - no debug information available for "cmAutoRas.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmAutoRasAltGK.o" - no debug information available for "cmAutoRasAltGK.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmAutoRasCall.o" - no debug information available for "cmAutoRasCall.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmAutoRasEP.o" - no debug information available for "cmAutoRasEP.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmCall.o" - no debug information available for "cmCall.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmcallcid.o" - no debug information available for "cmcallcid.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmCallHighLevel.o" - no debug information available for "cmCallHighLevel.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmCallMessages.o" - no debug information available for "cmCallMessages.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmCallMPoint.o" - no debug information available for "cmCallMPoint.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmcallobj.o" - no debug information available for "cmcallobj.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmcfgrt.o" - no debug information available for "cmcfgrt.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmConfig.o" - no debug information available for "cmConfig.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmControlTransport.o" - no debug information available for "cmControlTransport.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmCrossReference.o" - no debug information available for "cmCrossReference.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmdebprn.o" - no debug information available for "cmdebprn.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmDns.o" - no debug information available for "cmDns.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmGeneral.o" - no debug information available for "cmGeneral.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmhook.o" - no debug information available for "cmhook.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmHosts.o" - no debug information available for "cmHosts.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmnew.o" - no debug information available for "cmnew.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmparam.o" - no debug information available for "cmparam.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmpreservation.o" - no debug information available for "cmpreservation.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmQ931.o" - no debug information available for "cmQ931.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmrasinit.o" - no debug information available for "cmrasinit.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmsize.o" - no debug information available for "cmsize.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/cmutils.o" - no debug information available for "cmutils.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/cm/stkutils.o" - no debug information available for "stkutils.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/mib/cmmib.o" - no debug information available for "cmmib.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/mib/rvh323mibstats.o" - no debug information available for "rvh323mibstats.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/middle/mti.o" - no debug information available for "mti.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/middle/rvh323timer.o" - no debug information available for "rvh323timer.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/middle/rvh323watchdog.o" - no debug information available for "rvh323watchdog.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/middle/rvthreadinstance.o" - no debug information available for "rvthreadinstance.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/middle/seli.o" - no debug information available for "seli.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/ras/cmiras.o" - no debug information available for "cmiras.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/ras/cmras.o" - no debug information available for "cmras.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/ras/rasdecoder.o" - no debug information available for "rasdecoder.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/ras/rasin.o" - no debug information available for "rasin.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/ras/rasirr.o" - no debug information available for "rasirr.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/ras/rasout.o" - no debug information available for "rasout.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/ras/rasparams.o" - no debug information available for "rasparams.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/ras/rasutils.o" - no debug information available for "rasutils.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/snmp/cfgparam.o" - no debug information available for "cfgparam.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/snmp/h225callTable.o" - no debug information available for "h225callTable.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/snmp/h245table.o" - no debug information available for "h245table.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/snmp/snmp.o" - no debug information available for "snmp.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/snmp/snmpapi.o" - no debug information available for "snmpapi.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/snmp/snmputil.o" - no debug information available for "snmputil.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/snmp/table.o" - no debug information available for "table.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/transport/annexe.o" - no debug information available for "annexe.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/transport/iannerw.o" - no debug information available for "iannerw.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/transport/ianneses.o" - no debug information available for "ianneses.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/transport/iannetmr.o" - no debug information available for "iannetmr.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/transport/iannexe.o" - no debug information available for "iannexe.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/transport/tpkt.o" - no debug information available for "tpkt.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/transport/transnet.o" - no debug information available for "transnet.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/transport/transparent.o" - no debug information available for "transparent.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/transport/transport.o" - no debug information available for "transport.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/transport/transStates.o" - no debug information available for "transStates.c".
+
+
+warning: Could not find object file "/Users/frankwang/Documents/CMAD/trunk/source/callcontrol/thirdparty/H323Stack/linux/binaries/mac_Darwin-10_32bits/Debug/obj/h323/transport/transutil.o" - no debug information available for "transutil.c".
+
+.
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/common/src/cyrus-sasl-2.1.22/lib/auxprop.lo" - no debug information available for "auxprop.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/common/src/cyrus-sasl-2.1.22/lib/canonusr.lo" - no debug information available for "canonusr.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/common/src/cyrus-sasl-2.1.22/lib/checkpw.lo" - no debug information available for "checkpw.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/common/src/cyrus-sasl-2.1.22/lib/client.lo" - no debug information available for "client.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/common/src/cyrus-sasl-2.1.22/lib/common.lo" - no debug information available for "common.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/common/src/cyrus-sasl-2.1.22/lib/config.lo" - no debug information available for "config.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/common/src/cyrus-sasl-2.1.22/lib/external.lo" - no debug information available for "external.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/common/src/cyrus-sasl-2.1.22/lib/md5.lo" - no debug information available for "md5.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/common/src/cyrus-sasl-2.1.22/lib/saslutil.lo" - no debug information available for "saslutil.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/common/src/cyrus-sasl-2.1.22/lib/server.lo" - no debug information available for "server.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/common/src/cyrus-sasl-2.1.22/lib/seterror.lo" - no debug information available for "seterror.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/common/src/cyrus-sasl-2.1.22/lib/dlopen.lo" - no debug information available for "dlopen.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/common/src/cyrus-sasl-2.1.22/lib/plugin_common.lo" - no debug information available for "../plugins/plugin_common.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/common/src/cyrus-sasl-2.1.22/lib/../plugins/gssspnego.lo" - no debug information available for "gssspnego.c".
+
+
+warning: Could not find object file "/Users/jintao/work/src/cmad_berkshire/common/src/cyrus-sasl-2.1.22/lib/../plugins/gssspnego_init.lo" - no debug information available for "gssspnego_init.c".
+
+..
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_muldi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_negdi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_lshrdi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_ashldi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_ashrdi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_cmpdi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_ucmpdi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_clear_cache.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_enable_execute_stack.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(__main.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_absvsi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_absvdi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_addvsi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_addvdi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_subvsi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_subvdi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_mulvsi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_mulvdi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_negvsi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_negvdi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_ffssi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_ffsdi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_clz.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_clzsi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_clzdi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_ctzsi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_ctzdi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_popcount_tab.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_popcountsi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_popcountdi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_paritysi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_paritydi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_powisf2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_powidf2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_powixf2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_mulsc3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_muldc3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_mulxc3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_divsc3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_divdc3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_divxc3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_bswapsi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_bswapdi2.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_fixunssfsi.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_fixunsdfsi.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_fixunsxfsi.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_fixsfdi.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_fixunssfdi.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_floatdisf.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_floatundisf.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_fixdfdi.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_fixunsdfdi.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_floatdidf.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_floatundidf.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_fixxfdi.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_fixunsxfdi.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_floatdixf.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_floatundixf.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_eprintf.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(__gcc_bcmp.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_divdi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_moddi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_udivdi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_umoddi3.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_udiv_w_sdiv.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+
+warning: Could not find object file "/usr/lib/gcc/i686-apple-darwin10/4.2.1/libgcc.a(_udivmoddi4.o)" - no debug information available for "/var/tmp/gcc/gcc-5646~6/src/gcc/libgcc2.c".
+
+.. done
+Reading symbols for shared libraries + done
+0x93015c72 in __semwait_signal ()
+Continuing.
+Reading symbols for shared libraries .. done
+Reading symbols for shared libraries ... done
+Reading symbols for shared libraries ....... done
+Reading symbols for shared libraries . done
+Reading symbols for shared libraries . done
+Reading symbols for shared libraries . done
+Reading symbols for shared libraries . done
+Reading symbols for shared libraries .. done
+Reading symbols for shared libraries .. done
+Reading symbols for shared libraries . done
+Reading symbols for shared libraries . done
+Reading symbols for shared libraries . done
+Reading symbols for shared libraries . done
+Reading symbols for shared libraries . done
+
+Program received signal SIGINT, Interrupt.
+0x930137d2 in mach_msg_trap ()
+Quit
+The program is running.  Quit anyway (and detach it)? (y or n) Please answer y or n.
+The program is running.  Quit anyway (and detach it)? (y or n) Detaching from process 64507.
+File '64507' does not exist or is not a regular file.
+
+The program is not being run.
+File 'program' does not exist or is not a regular file.
+
+/Users/ZijingWu/myEnv/tools/mac/fruitstrap/Google Chrome Plug-in Host: No such file or directory

@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: retask
+Version: 0.4
+Summary: Task Queue implementation in python
+Home-page: https://github.com/kushaldas/retask
+Author: Kushal Das
+Author-email: kushaldas@gmail.com
+License: MIT
+Description: Retask is a simple task queue implementation written for human beings. It provides generic solution to create and manage task queues.
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.2

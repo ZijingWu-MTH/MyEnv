@@ -1,0 +1,1 @@
+ctags -L %ROOT%\filelist.filtered -f %ROOT%\mytags --recurse=yes --langdef=keyvaluepaires --langdef=css --langmap=keyvaluepaires:.strings.ini --langmap=css:.css --regex-css=/^.*\.([a-zA-Z0-9_-]+)\s.*$/\1/ --regex-keyvaluepaires=/^\s*([a-zA-Z0-9_-]+)\s*=.*$/\1/

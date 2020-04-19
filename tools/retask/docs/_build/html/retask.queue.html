@@ -1,0 +1,333 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>retask.queue &mdash; retask 0.4 documentation</title>
+    
+    <link rel="stylesheet" href="_static/flasky.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '0.4',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="retask 0.4 documentation" href="index.html" />
+    <link rel="up" title="API" href="api.html" />
+    <link rel="next" title="retask.task" href="retask.task.html" />
+    <link rel="prev" title="API" href="api.html" />
+   
+  
+  <link media="only screen and (max-device-width: 480px)" href="_static/small_flask.css" type= "text/css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="retask.task.html" title="retask.task"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="api.html" title="API"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">retask 0.4 documentation</a> &raquo;</li>
+          <li><a href="api.html" accesskey="U">API</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="retask-queue">
+<h1><tt class="xref py py-mod docutils literal"><span class="pre">retask.queue</span></tt><a class="headerlink" href="#retask-queue" title="Permalink to this headline">¶</a></h1>
+<p>This module contains the primary <tt class="xref py py-class docutils literal"><span class="pre">Queue</span></tt> which
+can be used to create and manage queues.</p>
+<dl class="class">
+<dt id="retask.queue.Queue">
+<em class="property">class </em><tt class="descclassname">retask.queue.</tt><tt class="descname">Queue</tt><big>(</big><em>name</em>, <em>config=None</em><big>)</big><a class="headerlink" href="#retask.queue.Queue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the <tt class="docutils literal"><span class="pre">Queue</span></tt> object with the given name. If the user
+passes optional config dictionary with details for Redis
+server, it will connect to that instance. By default it connects
+to the localhost.</p>
+<dl class="method">
+<dt id="retask.queue.Queue.connect">
+<tt class="descname">connect</tt><big>(</big><big>)</big><a class="headerlink" href="#retask.queue.Queue.connect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates the connection with the redis server.
+Return <tt class="docutils literal"><span class="pre">True</span></tt> if the connection works, else returns
+<tt class="docutils literal"><span class="pre">False</span></tt>. It does not take any arguments.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><tt class="docutils literal"><span class="pre">Boolean</span></tt> value</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">After creating the <tt class="docutils literal"><span class="pre">Queue</span></tt> object the user should call
+the <tt class="docutils literal"><span class="pre">connect</span></tt> method to create the connection.</p>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">retask</span> <span class="kn">import</span> <span class="n">Queue</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">Queue</span><span class="p">(</span><span class="s">&#39;test&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="retask.queue.Queue.dequeue">
+<tt class="descname">dequeue</tt><big>(</big><big>)</big><a class="headerlink" href="#retask.queue.Queue.dequeue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a <tt class="xref py py-class docutils literal"><span class="pre">Task</span></tt> object from the queue. Returns <tt class="docutils literal"><span class="pre">None</span></tt> if the
+queue is empty.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">Task</span></tt> object from the queue</td>
+</tr>
+</tbody>
+</table>
+<p>If the queue is not connected then it will raise
+<a class="reference internal" href="api.html#retask.ConnectionError" title="retask.ConnectionError"><tt class="xref py py-class docutils literal"><span class="pre">retask.ConnectionError</span></tt></a></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">retask</span> <span class="kn">import</span> <span class="n">Queue</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">Queue</span><span class="p">(</span><span class="s">&#39;test&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="n">q</span><span class="o">.</span><span class="n">dequeue</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">t</span><span class="o">.</span><span class="n">data</span>
+<span class="go">{u&#39;name&#39;: u&#39;kushal&#39;}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="retask.queue.Queue.enqueue">
+<tt class="descname">enqueue</tt><big>(</big><em>task</em><big>)</big><a class="headerlink" href="#retask.queue.Queue.enqueue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enqueues the given <tt class="xref py py-class docutils literal"><span class="pre">Task</span></tt> object to the queue and returns
+a <a class="reference internal" href="#retask.queue.Job" title="retask.queue.Job"><tt class="xref py py-class docutils literal"><span class="pre">Job</span></tt></a> object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>task</strong> &#8211; :<tt class="xref py py-class docutils literal"><span class="pre">Task</span></tt> object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><a class="reference internal" href="#retask.queue.Job" title="retask.queue.Job"><tt class="xref py py-class docutils literal"><span class="pre">Job</span></tt></a> object</td>
+</tr>
+</tbody>
+</table>
+<p>If the queue is not connected then it will raise
+<a class="reference internal" href="api.html#retask.ConnectionError" title="retask.ConnectionError"><tt class="xref py py-class docutils literal"><span class="pre">retask.ConnectionError</span></tt></a>.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">retask</span> <span class="kn">import</span> <span class="n">Queue</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">Queue</span><span class="p">(</span><span class="s">&#39;test&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">retask.task</span> <span class="kn">import</span> <span class="n">Task</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">task</span> <span class="o">=</span> <span class="n">Task</span><span class="p">({</span><span class="s">&#39;name&#39;</span><span class="p">:</span><span class="s">&#39;kushal&#39;</span><span class="p">})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">job</span> <span class="o">=</span> <span class="n">q</span><span class="o">.</span><span class="n">enqueue</span><span class="p">(</span><span class="n">task</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="retask.queue.Queue.find">
+<tt class="descname">find</tt><big>(</big><em>obj</em><big>)</big><a class="headerlink" href="#retask.queue.Queue.find" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the index of the given object in the queue, it might be string
+which will be searched inside each task.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>obj</strong> &#8211; object we are looking</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">-1 if the object is not found or else the location of the task</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="retask.queue.Queue.length">
+<tt class="descname">length</tt><a class="headerlink" href="#retask.queue.Queue.length" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gives the length of the queue. Returns <tt class="docutils literal"><span class="pre">None</span></tt> if the queue is not
+connected.</p>
+<p>If the queue is not connected then it will raise
+<a class="reference internal" href="api.html#retask.ConnectionError" title="retask.ConnectionError"><tt class="xref py py-class docutils literal"><span class="pre">retask.ConnectionError</span></tt></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="retask.queue.Queue.send">
+<tt class="descname">send</tt><big>(</big><em>task</em>, <em>result</em>, <em>expire=60</em><big>)</big><a class="headerlink" href="#retask.queue.Queue.send" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends the result back to the producer. This should be called if only you
+want to return the result in async manner.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>task</strong> &#8211; :<tt class="xref py py-class docutils literal"><span class="pre">Task</span></tt> object</li>
+<li><strong>result</strong> &#8211; Result data to be send back. Should be in JSON serializable.</li>
+<li><strong>expire</strong> &#8211; Time in seconds after the key expires. Default is 60 seconds.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="retask.queue.Queue.wait">
+<tt class="descname">wait</tt><big>(</big><em>wait_time=0</em><big>)</big><a class="headerlink" href="#retask.queue.Queue.wait" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a <tt class="xref py py-class docutils literal"><span class="pre">Task</span></tt> object from the queue. Returns <tt class="docutils literal"><span class="pre">False</span></tt> if it timeouts.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>wait_time</strong> &#8211; Time in seconds to wait, default is infinite.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">Task</span></tt> object from the queue or False if it timeouts.</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">retask</span> <span class="kn">import</span> <span class="n">Queue</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">Queue</span><span class="p">(</span><span class="s">&#39;test&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">task</span> <span class="o">=</span> <span class="n">q</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">task</span><span class="o">.</span><span class="n">data</span>
+<span class="go">{u&#39;name&#39;: u&#39;kushal&#39;}</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This is a blocking call, you can specity wait_time argument for timeout.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="retask.queue.Job">
+<em class="property">class </em><tt class="descclassname">retask.queue.</tt><tt class="descname">Job</tt><big>(</big><em>rdb</em><big>)</big><a class="headerlink" href="#retask.queue.Job" title="Permalink to this definition">¶</a></dt>
+<dd><p>Job object containing the result from the workers.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>rdb</strong> &#8211; The underlying redis connection.</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="retask.queue.Job.result">
+<tt class="descname">result</tt><a class="headerlink" href="#retask.queue.Job.result" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the result from the worker for this job. This is used to pass
+result in async way.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="retask.queue.Job.wait">
+<tt class="descname">wait</tt><big>(</big><em>wait_time=0</em><big>)</big><a class="headerlink" href="#retask.queue.Job.wait" title="Permalink to this definition">¶</a></dt>
+<dd><p>Blocking call to check if the worker returns the result. One can use
+job.result after this call returns <tt class="docutils literal"><span class="pre">True</span></tt>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>wait_time</strong> &#8211; Time in seconds to wait, default is infinite.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><cite>True</cite> or <cite>False</cite>.</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This is a blocking call, you can specity wait_time argument for timeout.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper"><p class="logo">
+  <a href="index.html">
+    <img class="logo" src="_static/retask-sidebar.png" alt="Logo"/>
+  </a>
+</p>
+<p>
+<iframe src="http://ghbtns.com/github-btn.html?user=kushaldas&repo=retask&type=watch&count=true&size=large"
+    allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+<p>
+  Retask is a simple task queue implementation
+  written for human beings. It provides generic
+  solution to create and manage task queues.
+</p><h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="api.html">API</a><ul>
+      <li>Previous: <a href="api.html" title="previous chapter">API</a></li>
+      <li>Next: <a href="retask.task.html" title="next chapter"><tt class="docutils literal"><span class="pre">retask.task</span></tt></a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/retask.queue.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2012, Kushal Das.
+    </div>
+    <a href="https://github.com/kushaldas/retask" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+git clone git@v9.git.n.xiaomi.com:media_thirdparty/thirdparty.git
+git clone git@v9.git.n.xiaomi.com:xplatform_util/xplatform_util.git
+git clone git@v9.git.n.xiaomi.com:webrtc/webrtc.git
+git clone git@v9.git.n.xiaomi.com:talk/talk.git
+git clone git@v9.git.n.xiaomi.com:talk_app/talk_app.git
+git clone git@v9.git.n.xiaomi.com:mcu_project/mcu.git
+git clone git@v9.git.n.xiaomi.com:xmppserver/server.git
+git clone git@v9.git.n.xiaomi.com:virtual_conference_client/virtual_conference_client.git
+git clone git@v9.git.n.xiaomi.com:comm/Common.git
+git clone git@v9.git.n.xiaomi.com:conference/Conference.git
+git clone git@v9.git.n.xiaomi.com:MediaPlayer/MediaPlayer.git
+git clone git@v9.git.n.xiaomi.com:publisher_server/services.git
+git clone git@v9.git.n.xiaomi.com:broadcast/TinyStreamCore.git
+git clone git@v9.git.n.xiaomi.com:mediareprocess/mediaReprocess.git
+git clone git@v9.git.n.xiaomi.com:pack/pack.git
+git clone git@v9.git.n.xiaomi.com:build_system/build_system.git
