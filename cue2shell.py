@@ -65,9 +65,9 @@ def translateWinAlias(name, value, translatedValueMap):
 def translatedValueToShell(name, value):
     lines = []
     if (util.getPlatformName() == "win32"):
-	lines = lines + ["doskey %s=%s" % (name, value)]
+        lines = lines + ["doskey %s=%s" % (name, value)]
     else:
-	lines = lines + ["alias %s='%s'" % (name, value)]
+        lines = lines + ["alias %s='%s'" % (name, value)]
     return lines
 
 

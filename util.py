@@ -18,7 +18,7 @@ try:
 except ImportError:
     #make no compile error happen. 
     dumpvar = 1    
- 	
+     
 import urlparse
 import posixpath
 import os.path
@@ -89,7 +89,7 @@ def pause():
         elif (sys.platform.startswith('linux')):
             os.system('read -p "Press any key to continue"') #linux
     except Exception: 
-	logging.exception("Exception happen when try to pause")
+        logging.exception("Exception happen when try to pause")
 
 def makeFileName(fileName):
     valid_chars = "-_.() %s%s" % (string.ascii_letters, string.digits) 
@@ -222,9 +222,9 @@ def getDiffTool():
 
     # At last for Mac and Linux we using vim + DirDiff
     if (sys.platform.startswith('darwin') or sys.platform.startswith('linux')):
-	exist = checkAppExistOnMacAndLinux("vim")
+        exist = checkAppExistOnMacAndLinux("vim")
         if (exist):
-	    loadDirDiffPath = os.path.join(os.path.dirname(sys.argv[0]), "LoadDirDiff.vim")
+            loadDirDiffPath = os.path.join(os.path.dirname(sys.argv[0]), "LoadDirDiff.vim")
             return ["vim", "-S", loadDirDiffPath]
     raise error.NoDiffTool(error.Msg.noDiffToolError)
 
@@ -377,7 +377,7 @@ def findSVNRoots(currentFolder):
                 logging.debug("current svn root url %s and possible svn root path %s", currentFolderUrl, currentFolder)
                 urlDelta = relurl(currentFolderUrl, possibleSvnRootUrl)
                 pathDelta = posixpath.relpath(currentFolder, possibleSvnRoot)
-		logging.debug("urlDelta %s, pathDelta %s", urlDelta, pathDelta)
+                logging.debug("urlDelta %s, pathDelta %s", urlDelta, pathDelta)
                 if (urlDelta.replace("\\", "/").strip("/").lower() != pathDelta.replace("\\", "/").strip("/").lower()):
                     result = result + [possibleSvnRoot]
             possibleSvnRootUrl = currentFolderUrl
