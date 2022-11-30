@@ -2,16 +2,8 @@ import sys
 import os
 import collections
 import re
-
-#sys.path.append(os.path.join(os.path.dirname(__file__), 'tools/whoosh/src'))
-#from whoosh.index import create_in
-#from whoosh.fields import *
-#from whoosh.qparser import QueryParser
-#from whoosh.index import open_dir
-#from whoosh.query import *
-
-#sys.path.append(os.path.join(os.path.dirname(__file__), 'tools/slowaes/python'))
-#import aes
+import hashlib
+import stat
 
 try:
     import _winreg
@@ -19,7 +11,11 @@ except ImportError:
     #make no compile error happen. 
     dumpvar = 1    
      
-import urlparse
+if sys.version_info >= (3, 0):
+    from urllib.parse import urlparse
+else:
+    import urlparse
+
 import posixpath
 import os.path
 import string
@@ -62,7 +58,6 @@ def isIgnoredFileDirName(name):
     if (name == ".svn" or name == ".hg"):
         return True
     return False
-    
 
 def normalizePath(path):
     if (os.sep == "\\"):
@@ -70,6 +65,9 @@ def normalizePath(path):
     elif (os.sep == "/"):
         path = path.replace("\\", os.sep);
     return path
+
+def isPlatformPosix():
+    return not getPlatformName() == "win32"
 
 def getPlatformName():
     if (sys.platform.startswith('win32')):
@@ -136,12 +134,13 @@ def getCurrentUser():
         return os.getlogin()
 
 def getLinesWithoutLineEnd(filePath):
-    lines = file(filePath, 'rt').readlines()
-    newLines = []
-    for line in lines:
-        line = line.rstrip("\n")
-        newLines = newLines + [line]
-    return newLines
+    with open(filePath, 'rt') as fileObj:
+        lines = fileObj.readlines()
+        newLines = []
+        for line in lines:
+            line = line.rstrip("\n")
+            newLines = newLines + [line]
+        return newLines
 
 def concateLines(lines):
     line = ""
@@ -166,7 +165,7 @@ def removeSpace(strings):
     result = []
     for item in strings:
         item = item.strip()
-        result = result + [item]
+        result.append(item)
     return result
 
 def filterEmptyString(strings):
@@ -174,7 +173,7 @@ def filterEmptyString(strings):
     for item in strings:
         if (item == ""):
             continue;
-        result = result + [item]
+        result.append(item)
     return result
 
 def checkAppExistOnMacAndLinux(commandName):
@@ -202,13 +201,13 @@ def getDiffTool():
             return [filePath]
         #We print the msg for set RPK_DIFF if we doesn't have the user doesn't have compare tool
         diffTool = os.path.join(os.path.dirname(sys.argv[0]), "DiffTools\\windiff.exe")
-        print "You can set RPK_DIFF environment variable to customize it"
+        print("You can set RPK_DIFF environment variable to customize it")
         return [diffTool]
     elif (sys.platform.startswith('darwin')):
         exist = checkAppExistOnMacAndLinux("opendiff")
         if (exist):
             return ["opendiff"]
-        print "You can set RPK_DIFF environment variable to customize it"
+        print("You can set RPK_DIFF environment variable to customize it")
     elif (sys.platform.startswith('linux')):
         exist = checkAppExistOnMacAndLinux("meld")
         if (exist):
@@ -216,7 +215,7 @@ def getDiffTool():
         exist = checkAppExistOnMacAndLinux("kdiff3")
         if (exist):
             return ["kdiff3"]
-        print "You can set RPK_DIFF environment variable to customize it"
+        print("You can set RPK_DIFF environment variable to customize it")
     else:
         raise error.PlatformNotSupported(error.Msg.platformNotSupportedError)
 
@@ -260,7 +259,7 @@ def getRegValue(rootKey, path, name):
         val, valType = _winreg.QueryValueEx(pathKey, name)
         _winreg.CloseKey(pathKey)
         return val;
-    except WindowsError, e:
+    except WindowsError as e:
         return None
 
 #Only valid on windows, current it will detect the Beyond compare 1/2/3, please make 
@@ -295,7 +294,7 @@ def unzipFileIntoFolder(filename, outdir, patternStr = None, callback = None):
         os.makedirs(outdir)
     try:
         zfobj = zipfile.ZipFile(filename)
-    except zipfile.BadZipfile, e:
+    except zipfile.BadZipfile as e:
         raise error.InvalidRPKFileError(error.Msg.invalidRPKFileError)
     for name in zfobj.namelist():
         if (not re.match(pattern, name)):
@@ -313,6 +312,31 @@ def unzipFileIntoFolder(filename, outdir, patternStr = None, callback = None):
             outfile.close()
         if (callback != None):
             callback(name, os.path.join(outdir, name))
+
+def removeWithPath(file_path):
+    if os.path.isfile(file_path) or os.path.islink(file_path):
+        os.chmod(file_path, stat.S_IWRITE)
+        os.unlink(file_path)
+    else:
+        removeFolder(file_path)
+    
+def removeAllFileInGitFolder(folder):
+    if (not os.path.exists(folder)):
+        return
+    for the_file in os.listdir(folder):
+        print(the_file)
+        if (the_file.startswith(".")):
+            continue; 
+        
+        file_path = os.path.join(folder, the_file)
+        try:
+            if os.path.isfile(file_path) or os.path.islink(file_path):
+                os.chmod(file_path, stat.S_IWRITE)
+                os.unlink(file_path)
+            else:
+                removeFolder(file_path)
+        except Exception as e:
+            print(e)
             
 def removeFolder(folder):
     if (not os.path.exists(folder)):
@@ -321,11 +345,12 @@ def removeFolder(folder):
         file_path = os.path.join(folder, the_file)
         try:
             if os.path.isfile(file_path) or os.path.islink(file_path):
+                os.chmod(file_path, stat.S_IWRITE)
                 os.unlink(file_path)
             else:
                 removeFolder(file_path)
-        except Exception, e:
-            print e
+        except Exception as e:
+            print(e)
     os.rmdir(folder)
 
 #return 0 for false, 1 for same, 2 for subfolder, user can check if return 
@@ -401,10 +426,10 @@ def isNumber(str):
 
 
 def askUserSelectRootFolder(svnFolders):
-    print "You have more than one SVN root, which one are you want to use:" 
+    print("You have more than one SVN root, which one are you want to use:")
     index = 0 
     for item in svnFolders:
-        print str(index) + ". " + item
+        print(str(index) + ". " + item)
         index = index + 1
 
     selectIndex = -2
@@ -442,15 +467,15 @@ def svnInfo(folderPath):
     workingPathInfoPath = workingPathInfoElments[0].childNodes[0].nodeValue
     return (rootUrl, workingPathInfoPath)
 
-#def whooshSearch(queryStr, indexDir):
-#    resultPaths = []
-#    ix = open_dir(indexDir)
-#    with ix.searcher() as searcher:
-#        query = QueryParser("content", ix.schema).parse(queryStr)
-#        results = searcher.search(query, limit=5000)
-#        for result in results:
-#            resultPaths = resultPaths + [result["path"]]
-#    return resultPaths
+def whooshSearch(queryStr, indexDir):
+    resultPaths = []
+    ix = open_dir(indexDir)
+    with ix.searcher() as searcher:
+        query = QueryParser("content", ix.schema).parse(queryStr)
+        results = searcher.search(query, limit=5000)
+        for result in results:
+            resultPaths = resultPaths + [result["path"]]
+    return resultPaths
 
 def containsAny(str, keyList):
     for key in keyList:
@@ -467,11 +492,21 @@ def filterList(itemList, patternStr):
         result = result + [item]
     return result
 
-def getFilesInFolder(folder):
+def getFilesInFolder(folder, keep_symbollink = False):
     result = []
     for root, dirs, files in os.walk(folder, topdown=False):
+        print(dirs)
         for name in files:
             result = result + [os.path.join(root, name)]
+
+        for dir in dirs:
+            if (not keep_symbollink):
+                break;
+
+            dirPath = os.path.join(root, dir)
+            if (not os.path.islink(dirPath)):
+                continue;
+            result.append(dirPath)
     return result
 
 Token = collections.namedtuple('Token', ['typ', 'value', 'line', 'column'])
@@ -519,3 +554,39 @@ def getHeaderFileBaseOnSource(filePath):
     if (m):
         return m.group(1) + ".h"
     return ""
+
+def generateMD5ForFile(filename):
+    md5_hash = hashlib.md5()
+    with open(filename,"rb") as f:
+        for byte_block in iter(lambda: f.read(4096),b""):
+            md5_hash.update(byte_block)
+    readable_hash = md5_hash.hexdigest();
+    return readable_hash
+
+# The main function that checks if two given strings match. 
+# The first string may contain wildcard characters 
+def wildcardMatch(first, second): 
+  
+    # If we reach at the end of both strings, we are done 
+    if len(first) == 0 and len(second) == 0: 
+        return True
+  
+    # Make sure that the characters after '*' are present 
+    # in second string. This function assumes that the first 
+    # string will not contain two consecutive '*' 
+    if len(first) > 1 and first[0] == '*' and  len(second) == 0: 
+        return False
+  
+    # If the first string contains '?', or current characters 
+    # of both strings match 
+    if (len(first) > 1 and first[0] == '?') or (len(first) != 0
+        and len(second) !=0 and first[0] == second[0]): 
+        return wildcardMatch(first[1:],second[1:]); 
+  
+    # If there is *, then there are two possibilities 
+    # a) We consider current character of second string 
+    # b) We ignore current character of second string. 
+    if len(first) !=0 and first[0] == '*': 
+        return wildcardMatch(first[1:],second) or wildcardMatch(first,second[1:]) 
+  
+    return False

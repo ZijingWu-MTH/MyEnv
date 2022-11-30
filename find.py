@@ -8,7 +8,9 @@ from optparse import OptionParser
 
 parser = OptionParser()
 parser.add_option("-r", "--root", dest="root", help="provide the root for search")
-parser.add_option("-e", "--execute", dest="execUtil", help="provide the utile to run for each file.")
+parser.add_option("-s", "--skip", dest="skipKeys", default="", help="provide the key to filter folder when traverse the folder.")
+parser.add_option("-e", "--execUtil", dest="execUtil", help="provide the utile to run for each file.")
+parser.add_option("-l", "--log", dest="logProcessing", action="store_true", default=False, help="output the processing folder.")
 parser.add_option("--ed", "--executeDir", dest="execUtilDir", help="provide the utile to run for each dir.")
 (options, args) = parser.parse_args()
 
@@ -28,6 +30,18 @@ try:
 except:
     pass
 
+skipPathPatterns = []
+if not options.skipKeys== "":
+    skipPathPatterns = options.skipKeys.split(";")
+
+def shouldSkip(dirPath):
+    match = False;
+    for key in skipPathPatterns:
+        if (util.wildcardMatch(key, dirPath)):
+            match = True;
+            break;
+    return match
+
 
 def includeInExtensionList(name):
     for ex in globalFileExtensionList:
@@ -36,11 +50,16 @@ def includeInExtensionList(name):
     for ex in localFileExtensionList:
         if (name.endswith(ex)):
             return True;
+    return False
 
-for root, dirs, files in os.walk(top, topdown=False):
+for root, dirs, files in os.walk(top, topdown=True):
+    if (options.logProcessing):
+        print("processing folder:%s" % root)
     for name in files:
         if (includeInExtensionList(name)):
             path = os.path.abspath(os.path.join(root, name))
+            if os.path.islink(path):
+                continue
             if (utilExec):
                 replaceCommand = string.replace(utilExec, "{path}", path)
                 commandPath = subprocess.call(replaceCommand, shell=True)
@@ -49,8 +68,12 @@ for root, dirs, files in os.walk(top, topdown=False):
     for name in dirs:
         if (includeInExtensionList(name)):
             path = os.path.abspath(os.path.join(root, name))
+            if os.path.islink(path):
+                continue
             if (utilDir):
                 replaceCommand = string.replace(utilDir, "{path}", path)
                 commandPath = subprocess.call(replaceCommand, shell=True)
             else:
                 print path
+
+    dirs[:] = [dir for dir in dirs if not shouldSkip(os.path.abspath(os.path.join(root, dir)))]

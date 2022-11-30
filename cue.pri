@@ -137,3 +137,6 @@ myxgcc = pushd . {command_sep} cd $ROOT/host-x86_64-apple-darwin12.4.0/gcc {comm
 symbolicate = export DEVELOPER_DIR="/Applications/XCode.app/Contents/Developer" {command_sep} /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks/DTDeviceKit.framework/Versions/A/Resources/symbolicatecrash     $1 $2 :: mac
 relay = ssh wuzijing@relay.xiaomi.com
 gitdiff = git --no-pager diff --relative -w $1
+
+mygrep = python "env{myEnvFolder}/find.py" -r . -s "*.git*;*boost*;*thirdparty*;*lightning*;*gt-*;*node_module*;*lightning*;*thirdparty*;*server*;*service*;*gt-*;*admin*;*ppapi*;*live*;*.git*;*backup*;*ffmpeg*;*cef-*" -e "grep -H '$1' '{path}'":: mac
+mygrepf = python "env{myEnvFolder}/find.py" -r . -s "*.git*;*boost*;*thirdparty*;*lightning*;*gt-*;*node_module*;*lightning*;*thirdparty*;*server*;*service*;*gt-*;*admin*;*ppapi*;*live*;*.git*;*backup*;*ffmpeg*;*cef-*" -e "grep -H -f pattern \"{path}\"":: mac
