@@ -4,6 +4,7 @@ import re
 import string
 import os
 import tempfile
+import subprocess
 
 def winShellEscape(value):
     value = value.replace("%", "%%");
@@ -38,24 +39,40 @@ def translateMacAlias(name, value, translatedValueMap):
     #check if the string contains parameter, if it contains we will translate it as function for mac
     value = re.sub("env{([^}]*)}", "$\\1", value)
     value = re.sub("{path_sep}", "/", value)
-    value = re.sub("{source}", ".", value)
-    value = re.sub("{shell_ext}", "sh", value)
+    if (util.isXonsh()):
+        value = re.sub("{source}", "source", value)
+        value = re.sub("{shell_ext}", "xsh", value)
+    else:
+        value = re.sub("{source}", ".", value)
+        value = re.sub("{shell_ext}", "sh", value)
     value = re.sub("{equal}", "=", value)
+    value = re.sub("{command_sep}", "&&", value)
     if (value.find("$1") >= 0):
         pass
     else:
-        value = re.sub("{command_sep}", "&&", value)
         value = re.sub("alias{([^}]*)}", replaceLambda, value)
     return value
    
 def translateWinAlias(name, value, translatedValueMap):
+    isPowerShell = util.isPowerShell()
     # because we have % in the result, so lets first do winShellEscape
     # because we write to file, so we doesn't need to do shell escape.
+
+    if (util.isXonsh()):
+        value = re.sub("env{([^}]*)}", "$\\1", value)
+        value = re.sub("{source}", "source", value)
+        value = re.sub("{shell_ext}", "xsh", value)
+    elif (isPowerShell):
+        value = re.sub("env{([^}]*)}", "$Env:\\1", value)
+        value = re.sub("{source}", ".", value)
+        value = re.sub("{shell_ext}", "ps1", value)
+    else:
+        value = re.sub("env{([^}]*)}", "%\\1%", value)
+        value = re.sub("{source}", "call", value)
     value = re.sub("env{([^}]*)}", "%\\1%", value)
     value = re.sub("{source}", "call", value)
     value = re.sub("{path_sep}", "\\\\", value)
     value = re.sub("{source}", "call", value)
-    value = re.sub("{shell_ext}", "cmd", value)
     value = re.sub("{command_sep}", "$T", value)
     value = re.sub("alias{([^}]*)}", replaceLambda, value)
     #value = re.sub("\$(\d)", "$args[\\1]", value)
@@ -65,7 +82,10 @@ def translateWinAlias(name, value, translatedValueMap):
 def translatedValueToShell(name, value):
     lines = []
     if (util.getPlatformName() == "win32"):
-        lines = lines + ["doskey %s=%s" % (name, value)]
+        if (util.isPowerShell()):
+            lines = lines + ["doskey %s=%s" % (name, value)]
+        else:
+            lines = lines + ["set-alias -name %s -value %s" % (name, value)]
     else:
         lines = lines + ["alias %s='%s'" % (name, value)]
     return lines
@@ -103,9 +123,32 @@ for cueLine in cueLines:
         translatedValueMap[name] = translatedValue
 
 outputFd = open(outputFile, 'w')
-if (util.getPlatformName() == "win32"):
+
+if (util.isXonsh()):
+    for (name, value) in translatedValueMap.items():
+        for i in range(0, 32):
+            value = value.replace(f"${i + 1}", f'$arg{i}')
+        outputFd.write("aliases['%s']='%s'\n" % (name, value))
+
+elif (util.getPlatformName() == "win32"):
     tempFileName = os.path.join(tempfile.gettempdir(), util.id_generator());
     f = open(tempFileName, 'w')
+    if (not util.isPowerShell()):
+        for (name, value) in translatedValueMap.items():
+            f.write("%s=%s\n" %(name, value))
+        f.close()
+        outputFd.write("echo read alias from %s\n" % (tempFileName))
+        outputFd.write("doskey /MACROFILE=%s\n" % (tempFileName))
+    else:
+        for (name, value) in translatedValueMap.items():
+            outputFd.write("remove-alias -name %s -force -erroraction silentlycontinue\n" % (name))
+
+            for i in range(0, 32):
+                value = value.replace(f"${i + 1}", f'$args[{i}]')
+            values = value.split("&&")
+
+            outputFd.write("function %s () { \n" % (name))
+
     for (name, value) in translatedValueMap.items():
         f.write("%s=%s\n" %(name, value))
     f.close()
@@ -117,11 +160,21 @@ if (util.getPlatformName() == "win32"):
 else:
     for (name, value) in translatedValueMap.items():
         if (value.find("$1") >= 0):
-            commands = value.split("{command_sep}")
+            commands = value.split("&&")
             outputFd.write("function %s(){\n" % (name))
+            outputFd.write("""
+set -o pipefail
+    """)
             for command in commands:
                 command = re.sub("alias{([^}]*)}", replaceLambda, command)
                 outputFd.write(command.strip() + "\n")
+                outputFd.write("""
+if [ $? == 0 ]; then 
+    echo ""
+else 
+    return -1
+fi
+                        """)
             outputFd.write("}\n")
         else:
             outputFd.write("alias %s='%s'\n" % (name, value))

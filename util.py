@@ -30,6 +30,12 @@ from xml.dom.minidom import Document
 import logging
 import logging.handlers
 
+def isPowerShell():
+    return len(os.getenv('PSModulePath', '').split(os.pathsep)) >= 3
+
+def isXonsh():
+    return len(os.getenv('SHELL_TYPE', ''))  > 0
+
 def getLogPath():
     homeDir = os.path.expanduser('~')
     logfile = os.path.join(homeDir, "rpklog.log")

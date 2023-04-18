@@ -76,12 +76,12 @@ cr = python "env{myEnvFolder}{path_sep}querychange.py" $1
 profile = cd ~ {command_sep} vim .profile :: mac
 rename = mv :: mac
 cls = clear :: mac
-gp = python "env{myEnvFolder}/find.py" -r . -e "grep -H \"$1\" {path}":: mac
-gp = python "env{myEnvFolder}/find.py" -r . -e "grep -H \"$1\" {path}":: linux
-gp = python "env{myEnvFolder}/find.py" -r . -e "findstr /snip $1 {path}" :: win32
-fullgp = find . -type f -exec grep -i -H "$1" {} \; :: mac
-fullgp = find . -type f -exec grep -i -H "$1" {} \; :: linux
-partialgp = echo "find $1 in file type extension $2" && find . \( -name "*.$2" \) -exec grep -i -H "$1" \; :: mac
+#gp = python "env{myEnvFolder}/find.py" -r . -e "grep -H \"$1\" {path}":: mac
+#gp = python "env{myEnvFolder}/find.py" -r . -e "grep -H \"$1\" {path}":: linux
+#gp = python "env{myEnvFolder}/find.py" -r . -e "findstr /snip $1 {path}" :: win32
+#fullgp = find . -type f -exec grep -i -H "$1" {} \; :: mac
+#fullgp = find . -type f -exec grep -i -H "$1" {} \; :: linux
+#partialgp = echo "find $1 in file type extension $2" && find . \( -name "*.$2" \) -exec grep -i -H "$1" \; :: mac
 restartnetwork = sudo ifconfig en0 down {command_sep} sudo ifconfig en0 up {command_sep} sudo ifconfig en1 down {command_sep} sudo ifconfig en1 up
 undo = python env{myEnvFolder}/svn_revert.py $1 $2 
 functions = declare -f :: mac
@@ -119,9 +119,14 @@ demo = cd ~/demo/ :: mac
 hidepath = export HIDESTATUSBAR=1
 showpath = export HIDESTATUSBAR=
 findchange = python $myEnvFolder/svn_changes.py $1 "$2"
-: = . $ROOT/last_edit_file.txt::mac
-: = . $ROOT/last_edit_file.txt::linux
+
+# ':' is a python operator in xonsh
+. = {source}
+> = cp $ROOT/last_edit_file.txt $ROOT/last_edit_file.{shell_ext} && {source} $ROOT/last_edit_file.{shell_ext}
+: = cp $ROOT/last_edit_file.txt $ROOT/last_edit_file.{shell_ext} && {source} $ROOT/last_edit_file.{shell_ext} :: mac
+: = cp $ROOT/last_edit_file.txt $ROOT/last_edit_file.{shell_ext} && {source} $ROOT/last_edit_file.{shell_ext} :: linux
 : = Copy-Item $env:ROOT/last_edit_file.txt $env:ROOT/last_edit_file.ps1 && . $env:ROOT/last_edit_file.ps1::win32
+
 checkin = python $myEnvFolder/partial_check_in.py
 symbolicate = export DEVELOPER_DIR="/Applications/XCode.app/Contents/Developer" {command_sep} /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks/DTDeviceKit.framework/Versions/A/Resources/symbolicatecrash -v -E  $1 $2
 openurl = open::mac
@@ -138,5 +143,5 @@ symbolicate = export DEVELOPER_DIR="/Applications/XCode.app/Contents/Developer" 
 relay = ssh wuzijing@relay.xiaomi.com
 gitdiff = git --no-pager diff --relative -w $1
 
-mygrep = python "env{myEnvFolder}/find.py" -r . -s "*.git*;*boost*;*thirdparty*;*lightning*;*gt-*;*node_module*;*lightning*;*thirdparty*;*server*;*service*;*gt-*;*admin*;*ppapi*;*live*;*.git*;*backup*;*ffmpeg*;*cef-*" -e "grep -H '$1' '{path}'":: mac
-mygrepf = python "env{myEnvFolder}/find.py" -r . -s "*.git*;*boost*;*thirdparty*;*lightning*;*gt-*;*node_module*;*lightning*;*thirdparty*;*server*;*service*;*gt-*;*admin*;*ppapi*;*live*;*.git*;*backup*;*ffmpeg*;*cef-*" -e "grep -H -f pattern \"{path}\"":: mac
+#mygrep = python "env{myEnvFolder}/find.py" -r . -s "*.git*;*boost*;*thirdparty*;*lightning*;*gt-*;*node_module*;*lightning*;*thirdparty*;*server*;*service*;*gt-*;*admin*;*ppapi*;*live*;*.git*;*backup*;*ffmpeg*;*cef-*" -e "grep -H \"$1\" \"{path}\"":: mac
+#mygrepf = python "env{myEnvFolder}/find.py" -r . -s "*.git*;*boost*;*thirdparty*;*lightning*;*gt-*;*node_module*;*lightning*;*thirdparty*;*server*;*service*;*gt-*;*admin*;*ppapi*;*live*;*.git*;*backup*;*ffmpeg*;*cef-*" -e "grep -H -f pattern \"{path}\"":: mac
