@@ -61,19 +61,19 @@ for root, dirs, files in os.walk(top, topdown=True):
             if os.path.islink(path):
                 continue
             if (utilExec):
-                replaceCommand = string.replace(utilExec, "{path}", path)
+                replaceCommand = utilExec.replace("{path}", path)
                 commandPath = subprocess.call(replaceCommand, shell=True)
             else:
-                print path
+                print(path)
     for name in dirs:
         if (includeInExtensionList(name)):
             path = os.path.abspath(os.path.join(root, name))
             if os.path.islink(path):
                 continue
             if (utilDir):
-                replaceCommand = string.replace(utilDir, "{path}", path)
-                commandPath = subprocess.call(replaceCommand, shell=True)
+                replaceCommand = utilDir.replace("{path}", path)
+                commandPath = subprocess.call(replaceCommand, shell=False)
             else:
-                print path
+                print(path)
 
     dirs[:] = [dir for dir in dirs if not shouldSkip(os.path.abspath(os.path.join(root, dir)))]

@@ -62,18 +62,20 @@ def translateWinAlias(name, value, translatedValueMap):
         value = re.sub("env{([^}]*)}", "$\\1", value)
         value = re.sub("{source}", "source", value)
         value = re.sub("{shell_ext}", "xsh", value)
+        value = re.sub("{path_sep}", "/", value)
     elif (isPowerShell):
         value = re.sub("env{([^}]*)}", "$Env:\\1", value)
         value = re.sub("{source}", ".", value)
         value = re.sub("{shell_ext}", "ps1", value)
+        value = re.sub("{path_sep}", "\\\\", value)
     else:
         value = re.sub("env{([^}]*)}", "%\\1%", value)
         value = re.sub("{source}", "call", value)
-    value = re.sub("env{([^}]*)}", "%\\1%", value)
+        value = re.sub("{shell_ext}", "cmd", value)
+        value = re.sub("{path_sep}", "\\\\", value)
+
     value = re.sub("{source}", "call", value)
-    value = re.sub("{path_sep}", "\\\\", value)
-    value = re.sub("{source}", "call", value)
-    value = re.sub("{command_sep}", "$T", value)
+    value = re.sub("{command_sep}", "&&", value)
     value = re.sub("alias{([^}]*)}", replaceLambda, value)
     #value = re.sub("\$(\d)", "$args[\\1]", value)
 
@@ -144,17 +146,24 @@ elif (util.getPlatformName() == "win32"):
             outputFd.write("remove-alias -name %s -force -erroraction silentlycontinue\n" % (name))
 
             for i in range(0, 32):
-                value = value.replace(f"${i + 1}", f'$args[{i}]')
+                value = value.replace(f"${i + 1}", f'$($args[{i}])')
             values = value.split("&&")
 
             outputFd.write("function %s () { \n" % (name))
 
-    for (name, value) in translatedValueMap.items():
-        f.write("%s=%s\n" %(name, value))
-    f.close()
+            for value in values:
+                outputFd.write(value)
+                checkError = """
+                $native_call_success = $?
+                if (-not $native_call_success) {
+                    throw 'The command failed. cmd: %s'
+                }
+                """ % value
+                outputFd.write("\n")
+                outputFd.write(checkError)
+                outputFd.write("\n")
 
-    outputFd.write("echo read alias from %s\n" % (tempFileName))
-    outputFd.write("doskey /MACROFILE=%s\n" % (tempFileName))
+            outputFd.write("} \n")
     #outputFd.write("del %s" % (tempFileName))
 
 else:

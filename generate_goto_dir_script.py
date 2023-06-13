@@ -44,7 +44,7 @@ def findSubItem(dir, keyPattern, includeFile):
 
 
 if (len(sys.argv) < 4):
-    print "Please give the text for search."
+    print("Please give the text for search.")
     sys.exit()
 key = sys.argv[1]
 direction = sys.argv[2]
@@ -73,14 +73,14 @@ if (len(result) > 1):
 
 path = "."
 if (len(result) == 0):
-    print "Cannot find the path."
+    print("Cannot find the path.")
 elif (len(result) > 1):
-    print "There are multiple path match the pattern, and cannot choose the one exactly matches:"
+    print("There are multiple path match the pattern, and cannot choose the one exactly matches:")
     index = 0
     for item in result:
-        print str(index) + ": " + item
+        print(str(index) + ": " + item)
         index = index + 1
-    userInputStr = raw_input("Please select the one you want goto, Enter for abort:")
+    userInputStr = input("Please select the one you want goto, Enter for abort:")
     if (util.isNumber(userInputStr)):
         selectIndex = int(userInputStr)
         path = result[selectIndex]
@@ -88,5 +88,5 @@ else:
 
     path = result[0]
 path = getFolderPath(path)
-print >>output, "cd \"" + path + "\""
+output.write("cd \"" + path + "\"")
 output.close()
