@@ -149,7 +149,7 @@ elif (util.getPlatformName() == "win32"):
                 value = value.replace(f"${i + 1}", f'$($args[{i}])')
             values = value.split("&&")
 
-            outputFd.write("function %s () { \n" % (name))
+            outputFd.write("function global:%s () { \n" % (name))
 
             for value in values:
                 outputFd.write(value)

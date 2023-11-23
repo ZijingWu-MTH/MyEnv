@@ -71,9 +71,9 @@ cr = python3 "env{myEnvFolder}{path_sep}querychange.py" $1
 profile = cd ~ {command_sep} vim .profile :: mac
 rename = mv :: mac
 cls = clear :: mac
-gp = python "env{myEnvFolder}/find.py" -r . -e "grep -H \"$1\" {path}":: mac
-gp = python "env{myEnvFolder}/find.py" -r . -e "grep -H \"$1\" {path}":: linux
-gp = python "env{myEnvFolder}/find.py" -r . -e "findstr /snip /C:""$1"" {path}" :: win32
+gp = python3 "env{myEnvFolder}/find.py" -r . -e "grep -H \"$1\" {path}":: mac
+gp = python3 "env{myEnvFolder}/find.py" -r . -e "grep -H \"$1\" {path}":: linux
+gp = python3 "env{myEnvFolder}/find.py" -r . -o env{OBJROOT}/findr.output.txt {command_sep} findstr /nip /C:"$1" /F:env{OBJROOT}/findr.output.txt :: win32
 #fullgp = find . -type f -exec grep -i -H "$1" {} \; :: mac
 #fullgp = find . -type f -exec grep -i -H "$1" {} \; :: linux
 #partialgp = echo "find $1 in file type extension $2" && find . \( -name "*.$2" \) -exec grep -i -H "$1" \; :: mac
@@ -97,8 +97,8 @@ D = cd ~/Downloads :: linux
 Doc = cd ~/Documents :: linux
 dv = python3 "env{myEnvFolder}{path_sep}download_video.py" download $1
 dvc = python3 "env{myEnvFolder}{path_sep}download_video.py" check
-ucd = python3 env{myEnvFolder}/generate_goto_dir_script.py $1 up  env{TMP}/goto.{shell_ext} && . env{TMP}/goto.{shell_ext}
-dcd = python3 env{myEnvFolder}/generate_goto_dir_script.py $1 down  env{TMP}/goto.{shell_ext} && . env{TMP}/goto.{shell_ext}
+ucd = python3 env{myEnvFolder}/generate_goto_dir_script.py $1 up  env{TMP}/goto.{shell_ext} {command_sep} . env{TMP}/goto.{shell_ext}
+dcd = python3 env{myEnvFolder}/generate_goto_dir_script.py $1 down  env{TMP}/goto.{shell_ext} {command_sep} . env{TMP}/goto.{shell_ext}
 devicedebug = $myEnvFolder/launch_device_debug.sh $1 :: mac
 gccd = g++ -g $1
 decompress = tar -cvzf $1 $1_decompress:: mac
@@ -110,16 +110,16 @@ unlockkeychain = security unlock-keychain ~/Library/Keychains/login.keychain :: 
 demo = cd ~/demo/ :: mac
 hidepath = export HIDESTATUSBAR=1
 showpath = export HIDESTATUSBAR=
-findchange = python $myEnvFolder/svn_changes.py $1 "$2"
+findchange = python3 $myEnvFolder/svn_changes.py $1 "$2"
 
-# ':' is a python operator in xonsh
+# ':' is a python3 operator in xonsh
 #. = {source}
 #> = cp $ROOT/last_edit_file.txt $ROOT/last_edit_file.{shell_ext} && {source} $ROOT/last_edit_file.{shell_ext}
 : = cp $ROOT/last_edit_file.txt $ROOT/last_edit_file.{shell_ext} && {source} $ROOT/last_edit_file.{shell_ext} :: mac
 : = cp $ROOT/last_edit_file.txt $ROOT/last_edit_file.{shell_ext} && {source} $ROOT/last_edit_file.{shell_ext} :: linux
 : = Copy-Item $env:ROOT/last_edit_file.txt $env:ROOT/last_edit_file.ps1 && . $env:ROOT/last_edit_file.ps1::win32
 
-checkin = python $myEnvFolder/partial_check_in.py
+checkin = python3 $myEnvFolder/partial_check_in.py
 symbolicate = export DEVELOPER_DIR="/Applications/XCode.app/Contents/Developer" {command_sep} /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/PrivateFrameworks/DTDeviceKit.framework/Versions/A/Resources/symbolicatecrash -v -E  $1 $2
 openurl = open::mac
 openurl = xdg-open::linux
@@ -135,5 +135,5 @@ symbolicate = export DEVELOPER_DIR="/Applications/XCode.app/Contents/Developer" 
 relay = ssh wuzijing@relay.xiaomi.com
 gitdiff = git --no-pager diff --relative -w $1
 
-#mygrep = python "env{myEnvFolder}/find.py" -r . -s "*.git*;*boost*;*thirdparty*;*lightning*;*gt-*;*node_module*;*lightning*;*thirdparty*;*server*;*service*;*gt-*;*admin*;*ppapi*;*live*;*.git*;*backup*;*ffmpeg*;*cef-*" -e "grep -H \"$1\" \"{path}\"":: mac
-#mygrepf = python "env{myEnvFolder}/find.py" -r . -s "*.git*;*boost*;*thirdparty*;*lightning*;*gt-*;*node_module*;*lightning*;*thirdparty*;*server*;*service*;*gt-*;*admin*;*ppapi*;*live*;*.git*;*backup*;*ffmpeg*;*cef-*" -e "grep -H -f pattern \"{path}\"":: mac
+#mygrep = python3 "env{myEnvFolder}/find.py" -r . -s "*.git*;*boost*;*thirdparty*;*lightning*;*gt-*;*node_module*;*lightning*;*thirdparty*;*server*;*service*;*gt-*;*admin*;*ppapi*;*live*;*.git*;*backup*;*ffmpeg*;*cef-*" -e "grep -H \"$1\" \"{path}\"":: mac
+#mygrepf = python3 "env{myEnvFolder}/find.py" -r . -s "*.git*;*boost*;*thirdparty*;*lightning*;*gt-*;*node_module*;*lightning*;*thirdparty*;*server*;*service*;*gt-*;*admin*;*ppapi*;*live*;*.git*;*backup*;*ffmpeg*;*cef-*" -e "grep -H -f pattern \"{path}\"":: mac

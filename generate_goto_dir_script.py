@@ -36,7 +36,7 @@ def findSubItem(dir, keyPattern, includeFile):
         prunedDirs = [x for x in dirs if not util.isIgnoredFileDirName(x)]
         dirs[:] = prunedDirs
         depth = root.count(os.path.sep) - dir.count(os.path.sep)
-        if depth >= 7:
+        if depth >= 12:
             # We're currently two directories in, so all subdirs have depth 10
             dirs[:] = [] # Don't recurse any deeper'
     return result
@@ -52,9 +52,9 @@ shellScriptPath = sys.argv[3]
 
 output = open(shellScriptPath, "w")
 
-key.replace(".", ".?")
-key.replace("?", ".?")
-key.replace("*", ".*")
+key = key.replace(".", "\.")
+key = key.replace("?", ".?")
+key = key.replace("*", ".*")
 
 if (direction == "up"):
     result = findParentItem(os.getcwd(), key)
@@ -80,7 +80,8 @@ elif (len(result) > 1):
     for item in result:
         print(str(index) + ": " + item)
         index = index + 1
-    userInputStr = input("Please select the one you want goto, Enter for abort:")
+
+    userInputStr = input("Please select the one you want goto. Press Enter to abort:")
     if (util.isNumber(userInputStr)):
         selectIndex = int(userInputStr)
         path = result[selectIndex]
