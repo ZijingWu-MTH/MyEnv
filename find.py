@@ -75,8 +75,6 @@ try:
                     print(path)
 
 
-
-
         for name in dirs:
             if (includeInExtensionList(name)):
                 path = os.path.abspath(os.path.join(root, name))

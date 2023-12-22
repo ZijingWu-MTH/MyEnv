@@ -22,16 +22,17 @@ def findParentItem(path, keyPattern):
     return result
     
 
-def findSubItem(dir, keyPattern, includeFile):
+def findSubItem(dir, keyPattern, includeFile, includeFolder):
     result = []
     for root, dirs, files in os.walk(dir, True):
         if (includeFile):
             for name in files:
                 if (re.match(keyPattern, name)):
                     result = result + [os.path.join(root, name)]
-        for name in dirs:
-            if (re.match(keyPattern, name)):
-                result = result + [os.path.join(root, name)]
+        if (includeFolder):
+            for name in dirs:
+                if (re.match(keyPattern, name)):
+                    result = result + [os.path.join(root, name)]
         
         prunedDirs = [x for x in dirs if not util.isIgnoredFileDirName(x)]
         dirs[:] = prunedDirs
@@ -41,11 +42,18 @@ def findSubItem(dir, keyPattern, includeFile):
             dirs[:] = [] # Don't recurse any deeper'
     return result
 
+from optparse import OptionParser
 
+parser = OptionParser()
+parser.add_option("-e", "--execUtil", dest="execUtil", help="the command template to execute.")
+parser.add_option("-f", "--includeFile", dest="includeFile", action="store_true", default = False, help="include the file.")
+parser.add_option("-d", "--includeFolder", dest="includeFolder", action="store_true", default = False, help="include the folder.")
+(options, args) = parser.parse_args()
 
 if (len(sys.argv) < 4):
     print("Please give the text for search.")
     sys.exit()
+utilExec = options.execUtil
 key = sys.argv[1]
 direction = sys.argv[2]
 shellScriptPath = sys.argv[3]
@@ -59,7 +67,7 @@ key = key.replace("*", ".*")
 if (direction == "up"):
     result = findParentItem(os.getcwd(), key)
 else:
-    result = findSubItem(os.getcwd(), key, True)
+    result = findSubItem(os.getcwd(), key, options.includeFile, options.includeFolder)
 
 # If there is exactly match, then we using the exactly match.
 if (len(result) > 1):
@@ -88,6 +96,12 @@ elif (len(result) > 1):
 else:
 
     path = result[0]
-path = getFolderPath(path)
-output.write("cd \"" + path + "\"")
+
+folder = getFolderPath(path)
+
+replaceCommand = utilExec
+replaceCommand = replaceCommand.replace("{folder}", folder)
+replaceCommand = replaceCommand.replace("{path}", path)
+output.write(replaceCommand)
+
 output.close()
