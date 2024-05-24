@@ -1,3 +1,6 @@
+$env:PATH = "D:\opensource\vim\src;$env:PATH"
+$env:PATH = "C:\Users\admin1\AppData\Local\Programs\Python\Python39\Scripts;$env:PATH"
+$env:PATH = "C:\Users\admin1\AppData\Local\Programs\Python\Python39;$env:PATH"
 . .\cue.ps1 d:\source_code\bj-media d:\source_code\bj-media\cue
 
 $env:OBJPOSTFIX="-media-x64"
@@ -46,6 +49,8 @@ $OutputEncoding = [console]::InputEncoding = [console]::OutputEncoding = New-Obj
 
 $env:PATH="$env:PATH;C:\Program Files\Git\bin"
 $env:PATH="$env:PATH;C:\windows\System32\"
+$env:PATH="$env:PATH;C:\gnutool\GetGnuWin32\bin"
+$env:PATH="$env:PATH;C:\gnutool\bin"
 
 $env:PATH="$env:PATH;C:\Program Files\Android\Android Studio\jbr\bin"
 $env:PATH="$env:PATH;C:\Program Files\PowerShell\7"
@@ -54,6 +59,7 @@ $env:PATH="$env:PATH;D:\gradle-7.4\bin"
 
 $env:PATH="$env:PATH;C:\Users\admin\AppData\Local\Android\Sdk\platform-tools"
 $env:PATH="$env:PATH;C:\apktool\"
+
 
 $env:PATH="$env:PATH;C:\Program Files\LLVM\bin\"
 $env:ASAN_OPTIONS="detect_stack_use_after_return=1"
