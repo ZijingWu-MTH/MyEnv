@@ -1,9 +1,9 @@
 $env:PATH = "e:\opensource\vim\src;$env:PATH"
 $env:PATH = "C:\Users\Administrator1\AppData\Local\Programs\Python\Python39\Scripts;$env:PATH"
 $env:PATH = "C:\Users\Administrator1\AppData\Local\Programs\Python\Python39;$env:PATH"
-. .\cue.ps1 e:\source_code\bj-media e:\source_code\bj-media\cue
+. .\cue.ps1 e:\source_code\bj-media2 e:\source_code\bj-media\cue
 
-$env:OBJPOSTFIX="-media-x64"
+$env:OBJPOSTFIX="-media2-x64"
 
 $env:DART_SDK_PATH = 'e:\opensource\flutter\bin\cache\dart-sdk'
 # 'e:\opensource\flutter\bin\cache\artifacts\engine\windows-x64\'
@@ -24,7 +24,7 @@ $env:PATH = "C:\Program Files (x86)\NASM;$env:PATH"
 
 
 $env:FLUTTER_PATH = "e:\opensource\flutter"
-$env:QT_PATH = "e:\opensource\qt5\qtbase"
+$env:QT_PATH = "e:\opensource\qt5-build\qtbase"
 
 $env:QT_LIB_POSTFIX = ".lib"
 $env:QT_DLL_POSTFIX = ".dll"
@@ -61,16 +61,15 @@ $env:PATH="$env:PATH;C:\Users\Administrator\AppData\Local\Android\Sdk\platform-t
 $env:PATH="$env:PATH;e:\installation\apk\"
 
 
-$env:PATH="$env:PATH;C:\Program Files\LLVM\bin\"
+$env:PATH="$env:PATH;C:\Program Files\LLVM\bin\;E:\android_studio\platform-tools"
 $env:ASAN_OPTIONS="detect_stack_use_after_return=1"
 
-$env:NDK_PATH="C:\Users\Administrator\Downloads\android-ndk-r26d"
-#$env:NDK_PATH="C:\Users\Administrator\Downloads\android-ndk-r17c"
+$env:NDK_PATH="e:\downloads\android-ndk-r26d-windows\android-ndk-r26d"
 $env:ANDROID_SDK_ROOT="E:\android_studio\"
 $env:JAVA_HOME="e:\jdk-17\"
 $env:PATH="$env:JAVA_HOME\bin;$env:PATH"
 $env:PATH="C:\Users\Administrator\Downloads\nssm-2.24\nssm-2.24\win64;$env:PATH"
 $env:PATH="E:\installation\perl\bin;$env:PATH"
-$env:PATH="E:\installation\nginx-1.26.1;$env:PATH"
-
 $env:JAVA_HOME_PATH=$env:JAVA_HOME
+$env:PATH="$env:PATH;E:\installation\jom"
+$env:PATH="E:\installation\nginx-1.26.1;$env:PATH"
