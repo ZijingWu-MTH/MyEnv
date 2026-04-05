@@ -1,0 +1,15 @@
+## 1. Common information
+- Our project will generate some header/java/python file in obj folder. The obj folder is in the same level as the project root folder. For example the source folder in ~/source_code/bj-media4 the object root folder can be ~/source_code/mac-obj-media4 for mac platform build. The obj folder structure is much the same as src folder.
+- The ${OBJROOT}/xplatform_util-src/xplatform_util/error_handling_template.h contains the error handling common code. In the macro name RTV means return void. RTN means return with an value. RFE means return an error feature. And AL means alarm. AS means assert. 5M/5S means 5 minutes interval or 5 seconds interval for alarm. You should generate code as with CHECK_RESULT_xxxx as much as possible. So error can be easily catched. Especially for the data or logic which will not happen in real environment, most likely will be a bug.
+- Please avoid to search the code in thirdparty-src folder, it is public opensource thirdparty code, and the code base is huge and slow for search.
+- Read the xplatform_util-src/xplatform_util/async/cancellable.h for how to use FutureRef and CancellableSet.
+- Use namespace xu as short alias of namespace xplatform_util.
+- Use english for comments, but the UI string or command line string should be Chinese.
+- Add log for important code location.
+- Read the multi_step_tasklets.h in obj folder for understand how multiple step tasklet works, it is generated from error_handling_template.h-liquid.
+- Important for any code change request, please think first if you have any question. Please confirm for any uncertanty.
+- Ignore file end with .un~ or .swp, which is vim swap file not source code file.
+- Prefer use multiple step tasklet instead of write an tasklet and inheritate from ReflectionTasklet.
+- Prefer break to multiple step instead of using MakeFuture and MakeFutureApply.
+- You don't need to run test to verify change.
+- Again, use CHECK_RESULT_xxxx as much as possible to make the code more linear. And use AL version for unexpected failure case, use AS version for in-correct code.
