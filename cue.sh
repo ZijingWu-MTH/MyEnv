@@ -1,5 +1,6 @@
 echo $1
 export myEnvFolder="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+echo $myEnvFolder
 export ROOT=$1
 export CUE=$2
 export SVN_EDITOR=vim
@@ -11,6 +12,7 @@ mkdir ~/tmp
 echo read global cue.
 cd ~/tmp
 rm cue.global.script.sh
+
 python3 "$myEnvFolder"/cue2shell.py $myEnvFolder/cue.pri  ~/tmp/cue.global.script.sh
 chmod +x ~/tmp/cue.global.script.sh
 . ~/tmp/cue.global.script.sh

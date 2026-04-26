@@ -556,7 +556,7 @@ def tokenize(s):
         raise RuntimeError('Unexpected character %r on line %d' %(s[pos], line))
 
 def getHeaderFileBaseOnSource(filePath):
-    m = re.match("(.*)\.cpp$", filePath)
+    m = re.match("(.*)\\.cpp$", filePath)
     if (m):
         return m.group(1) + ".h"
     return ""
