@@ -32,3 +32,5 @@
   please add the setting item with default value in setting.ini if new setting been added. (classroom-src/classroom/setting.ini for classroom project)
 - All the UI related code is in classroom-src, so don't search global for UI code.
 - All the DM/LTN property can only been modified in dart space, so you may need to wrapper it as xdart command.
+- For investigating bug, if you are not 100% sure about the root cause, don't try to fix it, you can first add log with 'DEBUG' tag in it to find out the root cause, 
+  i will re-build and run the test and past log to you.
