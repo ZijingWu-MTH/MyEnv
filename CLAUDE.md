@@ -34,3 +34,4 @@
 - All the DM/LTN property can only been modified in dart space, so you may need to wrapper it as xdart command.
 - For investigating bug, if you are not 100% sure about the root cause, don't try to fix it, you can first add log with 'DEBUG' tag in it to find out the root cause, 
   i will re-build and run the test and past log to you.
+- For bug fix, please change the code if you are 100% sure about the root cause, if not then you can add log with 'DEBUG' keyword in it, i will re-build and run it, and provide you with the log.
