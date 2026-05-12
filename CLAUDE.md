@@ -35,3 +35,5 @@
 - For investigating bug, if you are not 100% sure about the root cause, don't try to fix it, you can first add log with 'DEBUG' tag in it to find out the root cause, 
   i will re-build and run the test and past log to you.
 - For bug fix, please change the code if you are 100% sure about the root cause, if not then you can add log with 'DEBUG' keyword in it, i will re-build and run it, and provide you with the log.
+- For investigate unittest not passed issue, please grep the FAIL or EXPECTED, and then read code, then try to grep the log instead of full read the log.
+- For investigate bug, most of time you should not read the whole file line by line, which can be large. You should read code, and find the key log, and search the log by tool like sed to avoid read an large file line by line.
