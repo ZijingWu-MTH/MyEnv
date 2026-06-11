@@ -39,3 +39,8 @@
 - You don't need to limit the code width to be 80 or 120 width for each line, even 160 is OK.
 - You can run build_system/build.py to build folder, for example 'python3 build_system/build.py -p classroom-product -f media_player-src/fftools' to buld folder, you can check what product name, which are used for '-p', are used in build_system/setting.ini . When you start build you can check if ROOT/OBJROOT environment are defined, if not the build.py will failed, and so you can notic user to load environment before launch AI. You can go to any folder for build, the build.py will search build inimt or ini file for build each sub folder.
 - Don't need to limit line to 80 char, make it one line unless larger than 120.
+- For investigating bug, if you are not 100% sure about the root cause, don't try to fix it, you can first add log with 'DEBUG' tag in it to find out the root cause, 
+  i will re-build and run the test and past log to you.
+- For bug fix, please change the code if you are 100% sure about the root cause, if not then you can add log with 'DEBUG' keyword in it, i will re-build and run it, and provide you with the log.
+- For investigate unittest not passed issue, please grep the FAIL or EXPECTED, and then read code, then try to grep the log instead of full read the log.
+- For investigate bug, most of time you should not read the whole file line by line, which can be large. You should read code, and find the key log, and search the log by tool like sed to avoid read an large file line by line.
