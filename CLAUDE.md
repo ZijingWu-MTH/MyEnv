@@ -32,3 +32,10 @@
   please add the setting item with default value in setting.ini if new setting been added. (classroom-src/classroom/setting.ini for classroom project)
 - All the UI related code is in classroom-src, so don't search global for UI code.
 - All the DM/LTN property can only been modified in dart space, so you may need to wrapper it as xdart command.
+- For each bug investigation, give the root cause, and confirm with me before change code.
+- For large code change, confirm with the about the purposed solution (or plan) before change code. 
+- You don't need to rebuild or re-generate file after change code, we will rebuild mannually and it will be re-generate automatically.
+- We only change code to fix bug after find the extractly root cause, even for an works around fix, we need to first identify the root cause.
+- You don't need to limit the code width to be 80 or 120 width for each line, even 160 is OK.
+- You can run build_system/build.py to build folder, for example 'python3 build_system/build.py -p classroom-product -f media_player-src/fftools' to buld folder, you can check what product name, which are used for '-p', are used in build_system/setting.ini . When you start build you can check if ROOT/OBJROOT environment are defined, if not the build.py will failed, and so you can notic user to load environment before launch AI. You can go to any folder for build, the build.py will search build inimt or ini file for build each sub folder.
+- Don't need to limit line to 80 char, make it one line unless larger than 120.
