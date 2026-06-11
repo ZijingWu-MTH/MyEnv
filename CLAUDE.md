@@ -37,3 +37,10 @@
 - For bug fix, please change the code if you are 100% sure about the root cause, if not then you can add log with 'DEBUG' keyword in it, i will re-build and run it, and provide you with the log.
 - For investigate unittest not passed issue, please grep the FAIL or EXPECTED, and then read code, then try to grep the log instead of full read the log.
 - For investigate bug, most of time you should not read the whole file line by line, which can be large. You should read code, and find the key log, and search the log by tool like sed to avoid read an large file line by line.
+- Find the 'Smoking gun' before you give the root cause of bug after investigation, if you have trouble, you can add log, i will re-run the test or app, and give you back the log.
+- You don't need to compile and build the binary or run the test/app. I will do it for you, unless i telled to do that.
+- Because we write code using observer/signal a lot for module decouple, if the code try to delete the object in the object's event callback. The code should first disconnect signal or remove observer and then use Thread::Current()->Dispose to delete it asyncronizly, and before dispose function call all the signal should disconnected.
+- For build.ini/inimt or other build.xxx.ini/inimt, the generate build should be in stage0 to make other .cpp/.cc file can reference the generated .h file, for example .hps/.idl/.enum file.
+- Don't connect to future onCompelete/onSuccess/onFailure unless the lambda is not empty, and you should not capture the xu::RefFuture in the lambda in MakeFuture/MakeFutureApply to avoid reference circle.
+- Please always confirm me with the root cause before you fix bug.
+- The $ROOT folder contains a lot of git, the xxxxx-src is the code we copied from, so don't touch this folder, unless called to do that.
