@@ -37,3 +37,5 @@
 - For bug fix, please change the code if you are 100% sure about the root cause, if not then you can add log with 'DEBUG' keyword in it, i will re-build and run it, and provide you with the log.
 - For investigate unittest not passed issue, please grep the FAIL or EXPECTED, and then read code, then try to grep the log instead of full read the log.
 - For investigate bug, most of time you should not read the whole file line by line, which can be large. You should read code, and find the key log, and search the log by tool like sed to avoid read an large file line by line.
+- When you add setting in setting.ini, keep the value to be empty, we add it because we can easy find the item when need to set for development, no need to remember the name. And the setting.ini will not been build into the final package.
+- Don't change existing code just because of coding format style (for example space/intend), unless you are told to do that.
