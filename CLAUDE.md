@@ -32,6 +32,13 @@
   please add the setting item with default value in setting.ini if new setting been added. (classroom-src/classroom/setting.ini for classroom project)
 - All the UI related code is in classroom-src, so don't search global for UI code.
 - All the DM/LTN property can only been modified in dart space, so you may need to wrapper it as xdart command.
+- For each bug investigation, give the root cause, and confirm with me before change code.
+- For large code change, confirm with the about the purposed solution (or plan) before change code. 
+- You don't need to rebuild or re-generate file after change code, we will rebuild mannually and it will be re-generate automatically.
+- We only change code to fix bug after find the extractly root cause, even for an works around fix, we need to first identify the root cause.
+- You don't need to limit the code width to be 80 or 120 width for each line, even 160 is OK.
+- You can run build_system/build.py to build folder, for example 'python3 build_system/build.py -p classroom-product -f media_player-src/fftools' to buld folder, you can check what product name, which are used for '-p', are used in build_system/setting.ini . When you start build you can check if ROOT/OBJROOT environment are defined, if not the build.py will failed, and so you can notic user to load environment before launch AI. You can go to any folder for build, the build.py will search build inimt or ini file for build each sub folder.
+- Don't need to limit line to 80 char, make it one line unless larger than 120.
 - For investigating bug, if you are not 100% sure about the root cause, don't try to fix it, you can first add log with 'DEBUG' tag in it to find out the root cause, 
   i will re-build and run the test and past log to you.
 - For bug fix, please change the code if you are 100% sure about the root cause, if not then you can add log with 'DEBUG' keyword in it, i will re-build and run it, and provide you with the log.
@@ -39,3 +46,10 @@
 - For investigate bug, most of time you should not read the whole file line by line, which can be large. You should read code, and find the key log, and search the log by tool like sed to avoid read an large file line by line.
 - When you add setting in setting.ini, keep the value to be empty, we add it because we can easy find the item when need to set for development, no need to remember the name. And the setting.ini will not been build into the final package.
 - Don't change existing code just because of coding format style (for example space/intend), unless you are told to do that.
+- Find the 'Smoking gun' before you give the root cause of bug after investigation, if you have trouble, you can add log, i will re-run the test or app, and give you back the log.
+- You don't need to compile and build the binary or run the test/app. I will do it for you, unless i telled to do that.
+- Because we write code using observer/signal a lot for module decouple, if the code try to delete the object in the object's event callback. The code should first disconnect signal or remove observer and then use Thread::Current()->Dispose to delete it asyncronizly, and before dispose function call all the signal should disconnected.
+- For build.ini/inimt or other build.xxx.ini/inimt, the generate build should be in stage0 to make other .cpp/.cc file can reference the generated .h file, for example .hps/.idl/.enum file.
+- Don't connect to future onCompelete/onSuccess/onFailure unless the lambda is not empty, and you should not capture the xu::RefFuture in the lambda in MakeFuture/MakeFutureApply to avoid reference circle.
+- Please always confirm me with the root cause before you fix bug.
+- The $ROOT folder contains a lot of git, the xxxxx-src is the code we copied from, so don't touch this folder, unless called to do that.
