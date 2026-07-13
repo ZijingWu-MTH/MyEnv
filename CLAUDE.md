@@ -53,3 +53,5 @@
 - Don't connect to future onCompelete/onSuccess/onFailure unless the lambda is not empty, and you should not capture the xu::RefFuture in the lambda in MakeFuture/MakeFutureApply to avoid reference circle.
 - Please always confirm me with the root cause before you fix bug.
 - The $ROOT folder contains a lot of git, the xxxxx-src is the code we copied from, so don't touch this folder, unless called to do that.
+- For comment, it should only describe critical or tricky thing, so one line comments is good enough.
+- In the CHECK_RESULT_xxxx function, if the result is an function call or complex expression, then use an variable for the function return vaule.
