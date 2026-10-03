@@ -74,3 +74,5 @@
 - There is skills in classroom-src and service_framework-src. The skill in classroom-src is more about APP logic code or project. And the skill in service_framework-src is more about service.
   For openclaw, we may let it do the operation for the service, then you can first load service_framework-src related information.
 - All the code base is in ~/source_code named as bj-media/bj-media<N>, there are same copy of the data base, but may not in the same branc, you can by default load skills from bj-media unless specificed
+- For comment, it should only describe critical or tricky thing, so one line comments is good enough.
+- In the CHECK_RESULT_xxxx function, if the result is an function call or complex expression, then use an variable for the function return vaule.
