@@ -4,7 +4,7 @@
 - Please avoid to search the code in thirdparty-src folder, it is public opensource thirdparty code, and the code base is huge and slow for search.
 - Read the xplatform_util-src/xplatform_util/async/cancellable.h for how to use FutureRef and CancellableSet.
 - Use namespace xu as short alias of namespace xplatform_util.
-- Use english for comments, but the UI string or command line string should be Chinese.
+- Use english for comments, but the UI string should be Chinese, if write an script the console print should use english for developer or ops.
 - Add log for important code location.
 - Read the multi_step_tasklets.h in obj folder for understand how multiple step tasklet works, it is generated from error_handling_template.h-liquid.
 - Important for any code change request, please think first if you have any question. Please confirm for any uncertanty.
@@ -53,6 +53,7 @@
 - Don't connect to future onCompelete/onSuccess/onFailure unless the lambda is not empty, and you should not capture the xu::RefFuture in the lambda in MakeFuture/MakeFutureApply to avoid reference circle.
 - Please always confirm me with the root cause before you fix bug.
 - The $ROOT folder contains a lot of git, the xxxxx-src is the code we copied from, so don't touch this folder, unless called to do that.
+<<<<<<< Updated upstream
 - When add an python script add alias for each long option, for example --end-day need an short alias.
 - Each time we send an notification or do an design, we should think about there can be 5000 user for single room. 
 - You can find the skill in each git folder, the skill folder name will be 'skills', auto load it before you read this gift code.
@@ -76,3 +77,7 @@
 - All the code base is in ~/source_code named as bj-media/bj-media<N>, there are same copy of the data base, but may not in the same branc, you can by default load skills from bj-media unless specificed
 - For comment, it should only describe critical or tricky thing, so one line comments is good enough.
 - In the CHECK_RESULT_xxxx function, if the result is an function call or complex expression, then use an variable for the function return vaule.
+- Always use english as comments/usage message/log, the only exception is UI text for user, which need to follow the project.
+- If investigate the production environment issue, please reads the skills file PRODUCT_ENV_SERVICE.md in service_framework-src to check how to connect to production remote server and get the service log. Most of time, the message I give to you is from alarm service.
+- When do an refactor or write an module from zero, both the code complexity and the code solid is important, and we perfer for the 'Obviouse correct code'  instead of 'Seams correct code'. For code simility, so some issue (especially some fialure case, for example memory allocate failure) may not need to handled, so please confirm with me if you are not sure the problem need to specific handled or not. Following is the must handle case: 1. Network failure should evetually retry by lower layer or by higher layer. 2. Disk full. 3. No permission.  and so on.
+- For an design, the most important thing is define an clear the interface and component boundary, and split the responseibility into decoupled component. 
